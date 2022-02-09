@@ -31,5 +31,5 @@ Design: https://themelooks.org/demo/docland/html/home-course.html
 - Rimantas: [Github](https://github.com/belauzas)
 - Andrius: [Github](https://github.com/Tyroxy)
 - Audrius: [Github](https://github.com/1AMOA)
-- Raimondas [Github](https://github.com/RaimondasSileikis)
-- Žilvinas [Github](https://github.com/ZilvinasSvirskas)
+- Raimondas: [Github](https://github.com/RaimondasSileikis)
+- Žilvinas: [Github](https://github.com/ZilvinasSvirskas)
