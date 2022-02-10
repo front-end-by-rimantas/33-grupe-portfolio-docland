@@ -11,6 +11,10 @@ body {
         sans-serif;
 }
 
+.body-bg {
+    background-color: #f6f8f5;
+}
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
