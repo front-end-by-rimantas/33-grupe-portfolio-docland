@@ -188,6 +188,17 @@
 /*hero end*/
 
 /*collected data start*/
+.colldata {
+    text-align-last: center;
+    margin: 0 0 0 20px;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+p {
+    color: var(--paragraph-color);
+    font-size: 20px;
+  }
 /*collected data end*/
 
 /*timer start*/
