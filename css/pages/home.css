@@ -115,6 +115,76 @@
 /*header end*/
 
 /*hero start*/
+.learn {
+    margin-top: 150px;
+}
+.learn-ux {
+    font-size: 20px;
+    color: var(--gray);
+    margin-bottom: 60px; 
+}
+.learn-ux .fa {
+    color: var(--yellow);  
+}
+.learn-ux-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+.learn-ux-lecturer {
+    color: var(--teal);
+    font-weight: 600;    
+}
+.learn-ux-text {
+    font-weight: 300;
+    line-height: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 36px;
+}
+.learn-ux-img {
+    
+    position: relative;
+}
+.learn-ux-img-bg {
+    z-index: 100;
+    width: 100%;
+}
+.learn-ux-img-l {
+    position: absolute;
+    left: -75px;
+    top: -60px;
+    z-index: -1;
+    visibility: visible;
+}
+.learn-ux-img-r {
+    position: absolute;
+    left: 135px;
+    top: 140px;
+    z-index: -1;
+    visibility: visible;
+}
+@media (max-width:990px) {
+    .learn-ux-img-r,
+    .learn-ux-img-l {
+        visibility: hidden;
+    }
+}
+@media (min-width: 991px) {
+    .learn-ux-img-r {
+        left: 130px;
+        top: 140px;
+    }
+}
+@media (min-width: 1199px) {
+    .learn-ux-img-r {
+        left: 210px;
+        top: 210px;
+    }
+    .learn-ux {
+        margin-top: 80px;  
+    }
+}
 /*hero end*/
 
 /*collected data start*/
