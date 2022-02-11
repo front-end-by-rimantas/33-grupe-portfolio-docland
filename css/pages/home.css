@@ -20,6 +20,22 @@
 /*collected data end*/
 
 /*timer start*/
+.counter {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;;
+}
+
+.clock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+
 /*timer end*/
 
 /*what you'll learn start*/
