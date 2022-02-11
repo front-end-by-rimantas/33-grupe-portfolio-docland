@@ -102,8 +102,7 @@
   .Joinnow:hover{
       background-color: var(--yellow);
 }
-      
-  .Logo{
+    .Logo{
       display: inline-block;
       margin-top: 30px;
       margin-right: 200px;
