@@ -4,6 +4,7 @@
 
 /* 3rd-party */
 @import '../3rd-party/font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Merriweather:300,300i,400,400i&amp;display=swap');
 
 /* components */
 @import '../components/button.css';
@@ -188,6 +189,24 @@
 /*hero end*/
 
 /*collected data start*/
+.colldata {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 28px;
+    line-height: 50px;
+    font-family: 'Hind', sans-serif !important;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+p {
+    color: var(--paragraph-color);
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: lighter;
+  }
 /*collected data end*/
 
 /*timer start*/
