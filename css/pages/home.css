@@ -194,7 +194,7 @@
     white-space: nowrap;
     font-size: 28px;
     line-height: 50px;
-    font-family: 'Hind', sans-serif !important;
+    font-family: var(--heading-font);
 }
 
 h3 {
@@ -203,10 +203,17 @@ h3 {
 
 p {
     color: var(--paragraph-color);
+    font-family: var(--paragraph-font);
     font-size: 20px;
     line-height: 40px;
     font-weight: lighter;
   }
+
+
+
+
+
+  
 /*collected data end*/
 
 /*timer start*/
