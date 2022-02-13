@@ -31,7 +31,7 @@ body {
     --gray-dark: #343a40;
     --primary-color: #007bff;
     --secondary-color: #6c757d;
-    --success-color: #28a745;
+    --success-color: #C9FFF5;
     --info-color: #17a2b8;
     --warning-color: #ffc107;
     --danger-color: #dc3545;
@@ -39,4 +39,10 @@ body {
     --dark-color: #343a40;
 
     --paragraph-color: #5C6B56;
+  
+    --heading-font: Hind, sans-serif;
+    --paragraph-font: Ubuntu, sans-serif;
 }
+
+
+
