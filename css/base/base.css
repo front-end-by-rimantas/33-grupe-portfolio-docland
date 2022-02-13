@@ -11,6 +11,10 @@ body {
         sans-serif;
 }
 
+.body-bg {
+    background-color: #f6f8f5;
+}
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -34,8 +38,8 @@ body {
     --light-color: #f8f9fa;
     --dark-color: #343a40;
 
-
-
+    --paragraph-color: #5C6B56;
+  
     --heading-font: Hind, sans-serif;
     --paragraph-font: Ubuntu, sans-serif;
 }
