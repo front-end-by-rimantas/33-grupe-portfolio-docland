@@ -28,10 +28,23 @@
 }
 
 
-.close-in {
+.close-inbox {
     display: flex;
     justify-content: center;
 }
+
+.close-in {
+    padding: 12px 30px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+    background-color: var(--success-color);
+    color: var(--green);
+    font-size: 18px;
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+    border-radius: 25px;
+}
+
 
 .counterBox2 {
     display: flex;
