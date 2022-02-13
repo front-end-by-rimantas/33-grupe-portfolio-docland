@@ -192,28 +192,61 @@
 .colldata {
     text-align: center;
     white-space: nowrap;
+}
+
+.coda {
+    font-weight: normal;
     font-size: 28px;
     line-height: 50px;
     font-family: var(--heading-font);
 }
 
-h3 {
-    font-weight: normal;
-}
-
-p {
+.codatext {
     color: var(--paragraph-color);
     font-family: var(--paragraph-font);
     font-size: 20px;
     line-height: 40px;
     font-weight: lighter;
-  }
+}
 
+@media  (max-width: 990px) {
+    .colldata {
+        white-space: normal;
+        padding: 20px;
+}
 
+    .coda {
+        margin-top: 20px;
+        line-height: 26px;
+}
 
+@media  (max-width: 767px) {
+    .colldata {
+        padding: 0;
+}    
+    .coda {
+        margin-top: 25px;
+        font-size: 26px;
+        line-height: 30px;
+}
+    .codatext {
+        font-size: 16px;
+        line-height: 25px;
+}
 
-
-  
+@media  (max-width: 380px) {
+    .colldata {
+        white-space: normal;
+}    
+    .coda {
+        margin-top: 15px;
+        font-size: 24px;
+        line-height: 30px;
+}
+    .codatext {
+        font-size: 12px;
+        line-height: 14px;
+}
 /*collected data end*/
 
 /*timer start*/
