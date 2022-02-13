@@ -21,10 +21,16 @@
 
 /*timer start*/
 .counter {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;;
+    background-color: white;
+    padding: 60px 0px;
+    box-shadow: 10px 10px 20px #E9ECE8;
+    border-radius: 30px;
+}
+
+
+.close-in {
+    display: flex;
+    justify-content: center;
 }
 
 .clock {
