@@ -4,10 +4,20 @@
 
 /* 3rd-party */
 @import '../3rd-party/font-awesome.min.css';
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Merriweather:300,300i,400,400i&amp;display=swap');
 
 /* components */
 @import '../components/button.css';
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap');
+@font-face {
+    font-family: hind;
+    src: url('../../fonts/Hind-Regular.ttf');
+    font-family: ubuntu;
+    src: url('../../fonts/Ubuntu-Regular.ttf');
+}
+
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
