@@ -266,43 +266,47 @@
     font-weight: lighter;
 }
 
-@media  (max-width: 990px) {
+@media  (max-width: 991px) {
     .colldata {
         white-space: normal;
         padding: 20px;
-}
+    }
 
     .coda {
         margin-top: 20px;
         line-height: 26px;
+    }
 }
+
 
 @media  (max-width: 767px) {
     .colldata {
         padding: 0;
-}    
+    }    
     .coda {
         margin-top: 25px;
         font-size: 26px;
         line-height: 30px;
-}
+    }
     .codatext {
         font-size: 16px;
         line-height: 25px;
+    } 
 }
 
 @media  (max-width: 380px) {
     .colldata {
         white-space: normal;
-}    
+    }    
     .coda {
         margin-top: 15px;
         font-size: 24px;
         line-height: 30px;
-}
+    }
     .codatext {
         font-size: 12px;
         line-height: 14px;
+    }
 }
 /*collected data end*/
 
@@ -355,21 +359,23 @@
 @media  (max-width: 450px) {
     .time {
         font-size: 50px;
-}
+    }
     .timetext {
         font-size: 15px;
+    }
 }
 
 @media  (max-width: 370px) {
     .counterBox2 {
         gap: 20px;
         flex-wrap: wrap;
-}    
+    }    
     .time {
         font-size: 30px;
-}
+    }
     .timetext {
         font-size: 12px;
+    }
 }
 /*timer end*/
 
