@@ -344,8 +344,9 @@
 
 .time {
     font-size: 60px;
+    line-height: 1em;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     font-family: var(--heading-font);
 }
 
