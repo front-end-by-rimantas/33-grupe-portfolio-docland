@@ -60,3 +60,23 @@
     background-color: var(--teal);
     transition: 0.6s;
 }
+.btn-download {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.1em;
+    padding: 0.9em 2em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--gray-dark);
+    background-color: transparent;
+    border-radius: 0.3em;
+    border: 1px solid var(--teal);
+    cursor: pointer;
+    transition: 0.6s;
+}
+.btn-download:hover {
+    background-color: var(--teal);
+    color: var(--white);
+    transition: 0.6s;
+}

@@ -395,6 +395,118 @@
 /*what you'll learn end*/
 
 /*course syllabus start*/
+.course-title {
+    font-size: 36px;
+    color: var(--gray-dark);
+    margin-bottom: 20px;
+}
+.course-top-name {
+display: flex;
+justify-content: space-between;
+margin-bottom: 40px;
+}
+.btn-download-top {
+    visibility: hidden;
+}
+.course {
+    background-color: var(--white);
+    color: var(--gray-dark);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.course-short {
+    padding: 18px 0 10px; 
+}
+.course-week {
+    font-size: 20px;
+}
+.course-top {
+    padding: 18px 0 20px;
+}
+.course-name {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.course-close {
+    font-size: 30px;
+    color: var(--dark-color);
+}
+.hr {
+    width: 100%;
+    height: 2px;
+   margin-top: 20px;
+    color: var(--gray);
+}
+.course-text {
+    font-size: 20px;
+    line-height: 1.7em;
+}
+.course-size {
+    display: inline-block;
+    font-size: 18x;
+    line-height: 20px;
+    padding: 10px;
+}
+.course-row {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--gray);
+    display: grid;
+    grid-template-columns: 40px 2fr 1fr 40px 60px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    align-items: center;
+    grid-template-areas: 
+    "a b .. c d"
+    "a b . . c d"
+    "a b . . c d"
+    "a b . . c d"
+    "a b . . c d" 
+    "a b . . c d";      
+}
+.item-22 {
+  color:var(--gray-dark);
+  text-decoration: none;
+  cursor: pointer;
+}
+.item-44 {
+    justify-self: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--teal);
+}
+.item-4 {
+    font-size: 20px;
+    justify-self: center;
+}
+@media (min-width: 767px) {
+    .btn-download-top {
+        visibility: visible;
+    }
+    .btn-download-lower {
+        visibility: hidden;
+    }
+}
+@media (min-width: 991px) {
+    .course-short {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+        "a b";
+    }
+    .course-expand {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+        "a b";
+    }
+}
+
+
 /*course syllabus end*/
 
 /*course benefit start*/
