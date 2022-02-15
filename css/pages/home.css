@@ -412,6 +412,14 @@
 /*course instructors end*/
 
 /*footer start*/
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.footlogo {
+    filter: grayscale(100%) invert(100%) contrast(300%);
+}
 /*footer end*/
 
 /*button back to top start*/
