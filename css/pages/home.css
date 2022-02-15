@@ -21,7 +21,21 @@
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
+h1, h2, h3, a, span {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+}
+
+div {
+    font-family: var(--paragraph-font);
+}
+
 /*header start*/
+
 
 .dropbtn {
     background-color:inherit;
@@ -29,7 +43,7 @@
     font-size: 20px;
     border: none;
     cursor: pointer;
-    font-family: sans-serif;
+    font-family: ubuntu, sans-serif;
     transition-duration: 0.1s;
 }
 .dropbtn:hover{
@@ -41,7 +55,7 @@
       font-size: 20px;
       border: none;
       cursor: pointer;
-      font-family: sans-serif;
+      font-family: ubuntu, sans-serif;
 }
  .dropdown {
     position:relative;
@@ -81,7 +95,7 @@
       display: inline-block;
       padding-top: 30px;
       padding-right: 25px;
-      font-family: sans-serif;
+      font-family: ubuntu, sans-serif;
         
 }
  .Pricing{
@@ -89,7 +103,7 @@
       margin-top: 30px;
       display: inline-block;
       padding-right: 30px;
-      font-family: sans-serif;
+      font-family: ubuntu, sans-serif;
       color:var(--gray-dark);
       text-decoration: none;
       transition-duration: 0.1s;
@@ -265,12 +279,9 @@
     font-weight: normal;
     font-size: 28px;
     line-height: 50px;
-    font-family: var(--heading-font);
-}
+    }
 
 .codatext {
-    color: var(--paragraph-color);
-    font-family: var(--paragraph-font);
     font-size: 20px;
     line-height: 40px;
     font-weight: lighter;
@@ -340,7 +351,6 @@
     background-color: var(--success-color);
     color: var(--green);
     font-size: 18px;
-    font-family: var(--paragraph-font);
     font-weight: bold;
     border-radius: 25px;
 }
@@ -357,14 +367,11 @@
     line-height: 1em;
     text-align: center;
     font-weight: 600;
-    font-family: var(--heading-font);
 }
 
 .timetext {
     font-size: 20px;
     text-align: center;
-    font-family: var(--paragraph-font);
-    color: var(--paragraph-color);
 }
 
 @media  (max-width: 450px) {
@@ -414,7 +421,6 @@
 /*footer start*/
 .footer p {
     font-family: var(--paragraph-font);
-    color: var(--paragraph-color);
 }
 
 .footer .row {
