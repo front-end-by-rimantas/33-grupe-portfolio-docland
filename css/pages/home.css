@@ -412,7 +412,12 @@
 /*course instructors end*/
 
 /*footer start*/
-.row {
+.footer p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+}
+
+.footer .row {
     display: flex;
     justify-content: center;
 }
