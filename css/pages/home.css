@@ -4,7 +4,6 @@
 
 /* 3rd-party */
 @import '../3rd-party/font-awesome.min.css';
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Merriweather:300,300i,400,400i&amp;display=swap');
 
 /* components */
 @import '../components/button.css';
@@ -18,6 +17,7 @@
     font-family: ubuntu;
     src: url('../../fonts/Ubuntu-Regular.ttf');
 }
+
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
@@ -287,6 +287,11 @@ p {
     font-size: 36px;
     color: var(--gray-dark);
     margin-bottom: 20px;
+}
+.course-top-name {
+display: flex;
+justify-content: space-between;
+margin-bottom: 40px;
 }
 .btn-download-top {
     visibility: hidden;
