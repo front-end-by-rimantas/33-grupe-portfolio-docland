@@ -353,6 +353,7 @@ color: var(--white);
     position: absolute;
     margin-top: 12px;
     color:#17a2b8;
+    text-decoration: line-through;
     
 }
 .tick{
@@ -364,6 +365,7 @@ color: var(--white);
     content: "\2713";
     color: var(--white);
     margin-right:10px; 
+    
 }
 /*pricing end*/
 
