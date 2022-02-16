@@ -11,13 +11,14 @@ document.getElementById('myPopup').onclick = function () {
 };
 function openPopup() {
     document.getElementById('myPopup').style.display = 'block';
-    document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+    document.getElementById('myBg').style.display = 'block';
 }
 document.getElementById('myExit').onclick = function () {
     closePopup();
 };
 function closePopup() {
     document.getElementById('myPopup').style.display = 'none';
+    document.getElementById('myBg').style.display = 'none';
 }
 /*hero end*/
 
@@ -31,6 +32,23 @@ function closePopup() {
 /*what you'll learn end*/
 
 /*course syllabus start*/
+var accordion = document.querySelector('.accordion');
+var items = accordion.querySelectorAll('li');
+var courses = accordion.querySelectorAll('.course-short');
+
+function toggleAccordion() {
+    var thisItem = this.parentNode;
+    items.forEach((item) => {
+        if (thisItem == item) {
+            thisItem.classList.toggle('open');
+            return;
+        }
+        item.classList.remove('open');
+    });
+}
+
+courses.forEach((course) => course.addEventListener('click', toggleAccordion));
+
 /*course syllabus end*/
 
 /*course benefit start*/
