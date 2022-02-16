@@ -430,14 +430,18 @@ div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    box-sizing: border-box;
+    list-style-type: none;
 }
 
 .footlogo {
     filter: grayscale(100%) invert(100%) contrast(300%);
 }
 
-
+.footlink {
+    text-transform: capitalize;
+    text-decoration: none;
+    
+}
 
 /*footer end*/
 
