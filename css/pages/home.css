@@ -353,6 +353,7 @@ div {
     font-size: 18px;
     font-weight: bold;
     border-radius: 25px;
+    font-family: ubuntu, sans-serif;
 }
 
 .counterBox2 {
@@ -419,18 +420,25 @@ div {
 /*course instructors end*/
 
 /*footer start*/
-.footer p {
+
+
+/* .footer p {
     font-family: var(--paragraph-font);
-}
+} */
 
 .footer .row {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .footlogo {
     filter: grayscale(100%) invert(100%) contrast(300%);
 }
+
+
+
 /*footer end*/
 
 /*button back to top start*/
