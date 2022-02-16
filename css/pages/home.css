@@ -438,6 +438,7 @@ div {
 
 .fo-2, .fo-3 {
     margin-bottom: 30px;
+    list-style-type: none;
 }
 
 .footitle {
@@ -447,12 +448,21 @@ div {
 .footlink {
     text-transform: capitalize;
     text-decoration: none;
+    font-family: ubuntu, sans-serif;
     color: #5C6B56;
-    padding: 0 0 10px;
     line-height: 2.5em;
     font-weight: 300;
-    padding-bottom: 10px;
-}
+    cursor: pointer;
+    transition: all 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+
+  .footlink:hover {
+    padding-left: 10px;
+    font-size: 16px;
+    color: #5dd9c1;
+  }
 
 .footcol {
     max-width: 350px;
