@@ -421,14 +421,13 @@ div {
 
 /*footer start*/
 
+
 .footer .row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     box-sizing: content-box;
     list-style-type: none;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 .footlogo {
@@ -456,13 +455,13 @@ div {
     transition: all 0.7s;
     transition-timing-function: ease;
     transition-delay: 0s;
-  }
+}
 
-  .footlink:hover {
+.footlink:hover {
     padding-left: 10px;
     font-size: 16px;
     color: #5dd9c1;
-  }
+}
 
 .footcol {
     max-width: 350px;
@@ -479,6 +478,60 @@ div {
     font-weight: 300;
     margin-bottom: 30px;
 }
+
+.footform {
+    height: 60px;
+    max-width: 350px;
+    position: relative;
+    text-transform: capitalize;
+}
+  
+  .footform > .buton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 15px 30px;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: hind, sans-serif;
+    background-color: #fbc006;
+    color: #fff;
+    border: transparent;
+    border-radius: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+  .input {
+    position: relative;
+    font-size: 18px;
+    float: left;
+    max-width: 350px;
+    background-color: #5dd9c1;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+  .input::placeholder {
+    color: #fff;
+}
+  
+  .footform > .buton:hover {
+    color: black;
+}
+
+/* :focus-visible {
+    outline-width: 0px;
+} */
+
 
 /*footer end*/
 
