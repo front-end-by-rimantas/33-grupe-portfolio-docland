@@ -421,26 +421,53 @@ div {
 
 /*footer start*/
 
-
-/* .footer p {
-    font-family: var(--paragraph-font);
-} */
-
 .footer .row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    box-sizing: content-box;
     list-style-type: none;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .footlogo {
     filter: grayscale(100%) invert(100%) contrast(300%);
+    margin-bottom: 40px;
+}
+
+.fo-2, .fo-3 {
+    margin-bottom: 30px;
+}
+
+.footitle {
+    margin-bottom: 24px;
 }
 
 .footlink {
     text-transform: capitalize;
     text-decoration: none;
-    
+    color: #5C6B56;
+    padding: 0 0 10px;
+    line-height: 2.5em;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.footcol {
+    max-width: 350px;
+}
+
+.footertext {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.fotext {
+    font-weight: 300;
+    margin-bottom: 30px;
 }
 
 /*footer end*/
