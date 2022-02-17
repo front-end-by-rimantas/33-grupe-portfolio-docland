@@ -106,13 +106,13 @@
                 <img class="learn-ux-img-bg" src="./img/learn-ux-design/course-b.png" alt="Course">
                 <img class="learn-ux-img-l" src="./img/learn-ux-design/cbat.png" alt="Course">
                 <img class="learn-ux-img-r" src="./img/learn-ux-design/cbab.png" alt="Course">
-                <a href="#" target="_blank" onclick="openPopup(); return false;">
-                    <i class="fa fa-play play-btn"></i>
-                </a>
-                <div class="popup" id="myPopup">
-                    <a class="exit" href="" id="myExit" onclick="closePopup();return false">+</a>
-                    <iframe class="popup-frame" width="100%" height="100%" src="https://www.youtube.com/embed/ni5hRK1ehzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>     
+                <div onclick="openPopup(); return false;"><i class="fa fa-play play-btn"></i></div>
+                <div class="popup-back" id="myBg" onclick="closePopup();return false">
+                    <div class="popup" id="myPopup" >
+                        <div class="exit" >+</div>
+                        <iframe class="popup-frame" width="900" height="506" src="https://www.youtube.com/embed/ni5hRK1ehzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> 
+                </div>
             </div>
         </div>
     </section>
@@ -198,295 +198,261 @@
         <div class="row">
             <div class="col-12">
                 <div class="course-top-name">
-                    <h1 class="course-title">Course Syllabus</h1>
-                    <a class="btn btn-download btn-download-top" href="#">Download Syllabus</a>
+                    <h1>Course Syllabus</h1>
+                    <a class="btn-download btn-download-top" href="#">Download Syllabus</a>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="course" id="myCourse">
+            <div class="col-12 accordion">
+                <li class="course open">
                     <div class="col-12 course-short">
                         <div class="course-week">
-                            <img src="./img/course-syllabus/calendarIcon.png" width="30" height="30" alt="Week">
-                            <h3>Week 1</h3>
+                            <img src="./img/course-syllabus/calendarIcon.png" alt="Week">
+                            <h2>Week 1</h2>
                         </div>
                         <div class="course-top">
                             <div class="course-name">
                                 <h3>Introduction To UX Design?</h3>
-                                <a class="course-close" href="#" onclick="expandCourse(); return false;"><span class="fa fa-angle-up"></span></a>    
+                                <span class="fa fa-angle-down"></span>
                             </div>
-                            <p class="course-text">This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
+                            <p>This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
                             <div class="course-size">
                                 <span>3 hours to complete</span>
                                 <span>3 Lectures</span>
                                 <span>2 videos</span>
                             </div>
-                            <hr class="hr">
+                            
                         </div>
                     </div>
                     <div class="course-expand">
                         <div></div>
                         <div class="course-row">
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
-                            <a class="item-22" href="#">Welcome and introduction: About Course</a>
-                            <div></div>
+                            <div class="item-22" onclick="openPopup(); return false">Welcome and introduction: About Course</div>
                             <div class="item-3">03:29</div>
-                            <a href="#" class="course-preview item-44">Preview</a>
+                            <div class="course-preview item-44" onclick="openPopup(); return false" >Preview</div>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">Introduction about UX Design</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">The Difference between UI and UX?</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="play">
                             <div class="item-2">Talking about UX industry</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">How to apply UX on our daily project</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">What will I be making as a UX Designer?</div>
-                            <div></div>
-                            <div class="item-3">03:29</div>
+                           <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>   
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="course" id="myCourse">
+                <li class="course">
                     <div class="col-12 course-short">
                         <div class="course-week">
-                            <img src="./img/course-syllabus/calendarIcon.png" width="30" height="30" alt="Week">
-                            <h3>Week 2</h3>
+                            <img src="./img/course-syllabus/calendarIcon.png" alt="Week">
+                            <h2>Week 2</h2>
                         </div>
                         <div class="course-top">
                             <div class="course-name">
                                 <h3>UX Strategy & Formula</h3>
-                                <a class="course-close" href="#" onclick="expandCourse(); return false;"><span class="fa fa-angle-up"></span></a>   
+                                <span class="fa fa-angle-down"></span>  
                             </div>
-                            <p class="course-text">This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
+                            <p>This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
                             <div class="course-size">
                                 <span>3 hours to complete</span>
                                 <span>3 Lectures</span>
                                 <span>2 videos</span>
                             </div>
-                            <hr class="hr">
                         </div>
                     </div>
                     <div class="course-expand">
                         <div></div>
                         <div class="course-row">
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
-                            <a class="item-22" href="#">Welcome and introduction: About Course</a>
-                            <div></div>
+                            <div class="item-22" onclick="openPopup(); return false">Welcome and introduction: About Course</div>
                             <div class="item-3">03:29</div>
-                            <a href="#" class="course-preview item-44">Preview</a>
+                            <div class="course-preview item-44" onclick="openPopup(); return false" >Preview</div>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">Introduction about UX Design</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">The Difference between UI and UX?</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="play">
                             <div class="item-2">Talking about UX industry</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">How to apply UX on our daily project</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">What will I be making as a UX Designer?</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>   
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="course" id="myCourse">
+                <li class="course">
                     <div class="col-12 course-short">
                         <div class="course-week">
-                            <img src="./img/course-syllabus/calendarIcon.png" width="30" height="30" alt="Week">
-                            <h3>Week 3</h3>
+                            <img src="./img/course-syllabus/calendarIcon.png" alt="Week">
+                            <h2>Week 3</h2>
                         </div>
                         <div class="course-top">
                             <div class="course-name">
                                 <h3>Talking About Empathize & Define</h3>
-                                <a class="course-close" href="#" onclick="expandCourse(); return false;"><span class="fa fa-angle-up"></span></a>
+                                <span class="fa fa-angle-down"></span>
                                 </div>
-                            <p class="course-text">This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
+                            <p>This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
                             <div class="course-size">
                                 <span>3 hours to complete</span>
                                 <span>3 Lectures</span>
                                 <span>2 videos</span>
                             </div>
-                            <hr class="hr">
                         </div>
                     </div>
                     <div class="course-expand">
                         <div></div>
                         <div class="course-row">
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
-                            <a class="item-22" href="#">Welcome and introduction: About Course</a>
-                            <div></div>
+                            <div class="item-22" onclick="openPopup(); return false">Welcome and introduction: About Course</div>
                             <div class="item-3">03:29</div>
-                            <a href="#" class="course-preview item-44">Preview</a>
+                            <div class="course-preview item-44" onclick="openPopup(); return false" >Preview</div>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">Introduction about UX Design</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">The Difference between UI and UX?</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="play">
                             <div class="item-2">Talking about UX industry</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">How to apply UX on our daily project</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">What will I be making as a UX Designer?</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>   
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="course" id="myCourse">
+                <li class="course">
                     <div class="col-12 course-short">
                         <div class="course-week">
-                            <img src="./img/course-syllabus/calendarIcon.png" width="30" height="30" alt="Week">
-                            <h3>Week 4</h3>
+                            <img src="./img/course-syllabus/calendarIcon.png" alt="Week">
+                            <h2>Week 4</h2>
                         </div>
                         <div class="course-top">
                             <div class="course-name">
                                 <h3>Ideate, Iterate, Prototype & Test</h3>
-                                <a class="course-close" href="#" onclick="expandCourse(); return false;"><span class="fa fa-angle-up"></span></a>
+                                <span class="fa fa-angle-down"></span>
                                 </div>
-                            <p class="course-text">This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
+                            <p>This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
                             <div class="course-size">
                                 <span>3 hours to complete</span>
                                 <span>3 Lectures</span>
                                 <span>2 videos</span>
                             </div>
-                            <hr class="hr">
                         </div>
                     </div>
                     <div class="course-expand">
                         <div></div>
                         <div class="course-row">
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
-                            <a class="item-22" href="#">Welcome and introduction: About Course</a>
-                            <div></div>
+                            <div class="item-22" onclick="openPopup(); return false">Welcome and introduction: About Course</div>
                             <div class="item-3">03:29</div>
-                            <a href="#" class="course-preview item-44">Preview</a>
+                            <div class="course-preview item-44" onclick="openPopup(); return false" >Preview</div>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">Introduction about UX Design</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">The Difference between UI and UX?</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="play">
                             <div class="item-2">Talking about UX industry</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">How to apply UX on our daily project</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">What will I be making as a UX Designer?</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>   
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="course" id="myCourse">
+                <li class="course">
                     <div class="col-12 course-short">
                         <div class="course-week">
-                            <img src="./img/course-syllabus/calendarIcon.png" width="30" height="30" alt="Week">
-                            <h3>Week 5</h3>
+                            <img src="./img/course-syllabus/calendarIcon.png" alt="Week">
+                            <h2>Week 5</h2>
                         </div>
                         <div class="course-top">
                             <div class="course-name">
                                 <h3>Build Industry Related UX Portfolio</h3>
-                                <a class="course-close" href="#" onclick="expandCourse(); return false;"><span class="fa fa-angle-up"></span></a>
+                                <span class="fa fa-angle-down"></span>
                                 </div>
-                            <p class="course-text">This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
+                            <p>This week I will give you a brief overview of the user experience process that I will teach in this course sequence. We will begin by defining the term "User Experience".</p>
                             <div class="course-size">
                                 <span>3 hours to complete</span>
                                 <span>3 Lectures</span>
                                 <span>2 videos</span>
                             </div>
-                            <hr class="hr">
                         </div>
                     </div>
                     <div class="course-expand">
                         <div></div>
                         <div class="course-row">
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
-                            <a class="item-22" href="#">Welcome and introduction: About Course</a>
-                            <div></div>
+                            <div class="item-22" onclick="openPopup(); return false">Welcome and introduction: About Course</div>
                             <div class="item-3">03:29</div>
-                            <a href="#" class="course-preview item-44">Preview</a>
+                            <div class="course-preview item-44" onclick="openPopup(); return false" >Preview</div>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">Introduction about UX Design</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">The Difference between UI and UX?</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="play">
                             <div class="item-2">Talking about UX industry</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">How to apply UX on our daily project</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>
                             <img class="item-1" src="./img/course-syllabus/syllabus-play-icon.png" alt="Play">
                             <div class="item-2">What will I be making as a UX Designer?</div>
-                            <div></div>
                             <div class="item-3">03:29</div>
                             <span class="fa fa-lock item-4"></span>   
                         </div>
                     </div>
-                </div>
+                </li>
                 
             </div>
             <div class="btn-download-lower">
