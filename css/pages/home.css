@@ -181,6 +181,17 @@
         visibility: hidden;
         transform: scale(0);
     }
+    .popup-back .popup {
+        width: 100vw;
+        height: auto;
+       padding-left: 30px;
+        right: 20px;
+        margin-top: 25vh; 
+    }
+    .popup-back .popup .exit {
+     top: -25px;
+     right: -40px;
+    }
 }
 @media (min-width: 991px) {
     .learn-ux-img-r {
@@ -201,7 +212,7 @@
     }
     .learn-ux > .btn-underline::after {
         left:0;
-    }
+    } 
 }
 @media (min-width: 1199px) {
     .learn-ux-img-r {
@@ -218,12 +229,11 @@
         left:2em;
     }
 }
-
 .popup-back {
     display: none;
-    width: 100vw;
-    height: 100vh;
     position: fixed;
+    width: 100vw;
+    height: auto;
     top: 0;
     right: 0;
     bottom: 0;
@@ -233,20 +243,21 @@
 }
 .popup {
     display: none;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
+    position: absolute;;
+    width: 896px;
+    height: 504px;
+    margin-left: calc(50vw - 448px);
+    margin-top: calc(50vh - 252px);
     z-index: 100;
   }
   .exit {
     position: absolute;
-    left: 900px;
-    font-size: 30px;
-    top: -30px;
-    left: 880px;
+    right: 0;
+    top: -40px;
+    font-size: 35px;
     transform: rotate(45deg);
     text-decoration: none;
-    color: var(--gray-dark);
+    color: var(--secondary-color);
     cursor: pointer;
   }
   .exit:hover {

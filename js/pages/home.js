@@ -10,8 +10,9 @@ document.getElementById('myPopup').onclick = function () {
     openPopup();
 };
 function openPopup() {
-    document.getElementById('myPopup').style.display = 'block';
+    document.getElementById('myPopup').style.display = 'flex';
     document.getElementById('myBg').style.display = 'block';
+    document.body.style.overflow = 'hidden';
 }
 document.getElementById('myBg').onclick = function () {
     closePopup();
@@ -19,6 +20,7 @@ document.getElementById('myBg').onclick = function () {
 function closePopup() {
     document.getElementById('myPopup').style.display = 'none';
     document.getElementById('myBg').style.display = 'none';
+    document.body.style.overflow = '';
 }
 /*hero end*/
 
