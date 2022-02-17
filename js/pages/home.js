@@ -13,7 +13,7 @@ function openPopup() {
     document.getElementById('myPopup').style.display = 'block';
     document.getElementById('myBg').style.display = 'block';
 }
-document.getElementById('myExit').onclick = function () {
+document.getElementById('myBg').onclick = function () {
     closePopup();
 };
 function closePopup() {
@@ -32,12 +32,12 @@ function closePopup() {
 /*what you'll learn end*/
 
 /*course syllabus start*/
-var accordion = document.querySelector('.accordion');
-var items = accordion.querySelectorAll('li');
-var courses = accordion.querySelectorAll('.course-short');
+const accordion = document.querySelector('.accordion');
+const items = accordion.querySelectorAll('li');
+const courses = accordion.querySelectorAll('.course-short');
 
 function toggleAccordion() {
-    var thisItem = this.parentNode;
+    let thisItem = this.parentNode;
     items.forEach((item) => {
         if (thisItem == item) {
             thisItem.classList.toggle('open');
