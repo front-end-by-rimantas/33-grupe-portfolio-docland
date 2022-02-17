@@ -6,6 +6,20 @@
 /*header end*/
 
 /*hero start*/
+document.getElementById('myPopup').onclick = function () {
+    openPopup();
+};
+function openPopup() {
+    document.getElementById('myPopup').style.display = 'block';
+    document.getElementById('myBg').style.display = 'block';
+}
+document.getElementById('myBg').onclick = function () {
+    closePopup();
+};
+function closePopup() {
+    document.getElementById('myPopup').style.display = 'none';
+    document.getElementById('myBg').style.display = 'none';
+}
 /*hero end*/
 
 /*collected data start*/
@@ -18,6 +32,23 @@
 /*what you'll learn end*/
 
 /*course syllabus start*/
+const accordion = document.querySelector('.accordion');
+const items = accordion.querySelectorAll('li');
+const courses = accordion.querySelectorAll('.course-short');
+
+function toggleAccordion() {
+    let thisItem = this.parentNode;
+    items.forEach((item) => {
+        if (thisItem == item) {
+            thisItem.classList.toggle('open');
+            return;
+        }
+        item.classList.remove('open');
+    });
+}
+
+courses.forEach((course) => course.addEventListener('click', toggleAccordion));
+
 /*course syllabus end*/
 
 /*course benefit start*/
