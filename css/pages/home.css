@@ -755,6 +755,12 @@ color: var(--white);
     background-color: var(--success-color);
     border-radius: 5px;
     font-size: 30px;
+    transition: 0.4s;
+}
+.rev-top .rev-buttons .rev-button:hover {
+    background-color: var(--teal);
+    color: var(--white);
+    transition: 0.4s;
 }
 .rev-labels {
     display: flex;
