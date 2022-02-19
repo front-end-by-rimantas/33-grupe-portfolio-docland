@@ -426,6 +426,7 @@
     padding: 30px 0 20px;
     border-radius: 20px;
     margin-bottom: 50px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 }
 .course .course-short {
     padding: 20px 20px 10px 20px; 
@@ -759,15 +760,15 @@ color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    margin-bottom: 50px; 
-    background-color: var(--white);
-    border-radius: 15px;
 }
 .rev-labels .rev-label {
     display: grid;
     grid-template-rows: auto 1fr;
-    padding: 50px 20px 50px 20px;
-    margin-bottom: 20px;
+    padding: 30px 20px 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 }
 .rev-labels .rev-label .student {
     display: grid;
@@ -779,23 +780,33 @@ color: var(--white);
      margin-bottom: 10px;
 }
 .rev-labels .rev-label .student img {
+   grid-area: a; 
    width: 80px;
    height: 80px;
    align-items: center;
    justify-content: center;
-   grid-area: a;
 }
 .rev-labels .rev-label .student span {
     grid-area: b;
     color: var(--yellow);
+    margin-top: 1em;
 }
 .rev-labels .rev-label .student h3 {
     grid-area: c;
+    color:var(--purple);
+    font-size: 18px;
+    font-weight: 600;
 }
 .rev-labels .rev-label p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.8em;
+    color: var(--gray);
     font-weight: 300;
+}
+@media (min-width: 991px) {
+    .rev-top .rev-buttons {
+        visibility: visible;
+    }
 }
 
 /*student rewiews end*/
