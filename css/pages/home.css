@@ -929,4 +929,31 @@ color: var(--white);
 /*footer end*/
 
 /*button back to top start*/
+.back-top {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    z-index: 99;
+    display: none;
+}
+.back-top a {
+    height: 35px;
+    width: 35px;
+    color: var(--white);
+    background-color:  var(--yellow);
+    border:none;
+    text-decoration: none;
+    border-radius: 50%;
+    padding-left: 13px;
+    padding-top: 9px;
+    transition: all 0.4s;
+}
+.back-top a:hover {
+    background-color:  var(--yellow);
+    opacity: 0.6;
+    transition: all 0.4s;
+}
+html {
+    scroll-behavior: smooth;
+}
 /*button back to top end*/
