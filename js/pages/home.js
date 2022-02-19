@@ -72,4 +72,20 @@ courses.forEach((course) => course.addEventListener('click', toggleAccordion));
 /*footer end*/
 
 /*button back to top start*/
+
+const backTopBtn = document.getElementById('backTopBtn');
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 300 ||
+        document.documentElement.scrollTop > 300
+    ) {
+        backTopBtn.style.display = 'block';
+    } else {
+        backTopBtn.style.display = 'none';
+    }
+}
 /*button back to top end*/
