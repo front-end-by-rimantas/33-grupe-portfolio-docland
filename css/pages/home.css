@@ -605,6 +605,12 @@
     background-color: var(--success-color);
     border-radius: 5px;
     font-size: 30px;
+    transition: 0.4s;
+}
+.bene-top .bene-buttons .bene-button:hover {
+    background-color: var(--teal);
+    color: var(--white);
+    transition: 0.4s;
 }
 .bene-labels {
     display: flex;
