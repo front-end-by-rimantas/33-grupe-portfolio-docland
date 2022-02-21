@@ -929,7 +929,7 @@ color: var(--white);
 /*footer end*/
 
 /*button back to top start*/
-.back-top {
+.back-top1 {
     position: fixed;
     bottom: 100px;
     right: 25px;
@@ -938,12 +938,12 @@ color: var(--white);
     height: 35px;
     width: 35px;       
 }
-.back-top .aa:hover {
+.back-top1 a:hover {
     background-color:  var(--yellow);
     opacity: 0.6;
     transition: all 0.4s;
 }
-.back-top .aa {
+.back-top1 a {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -962,7 +962,39 @@ color: var(--white);
     animation-name: raindrop;
     animation-direction: normal;
     animation-duration: 0.4s;
-    animation-iteration-count: 1;      
+    animation-iteration-count: 1;
+    overflow: visible;
+}
+.back-top2 {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    z-index: 99;
+    display: none;  
+    height: 35px;
+    width: 35px;
+}
+.back-top2 a {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    padding: 0;
+    bottom:0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background-color:  var(--yellow);
+    border: none;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    animation-name: raindrop;
+    animation-direction: reverse;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;   
+    overflow: hidden;
 }
 @keyframes raindrop {
     0% {
@@ -1031,8 +1063,7 @@ color: var(--white);
         height: 100%;
         width: 100%;
     }
-}
-
+}  
 html {
     scroll-behavior: smooth;
 }

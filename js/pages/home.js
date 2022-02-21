@@ -72,8 +72,8 @@ courses.forEach((course) => course.addEventListener('click', toggleAccordion));
 /*footer end*/
 
 /*button back to top start*/
-
-const backTopBtn = document.getElementById('backTopBtn');
+const backTopBtn1 = document.getElementById('backTopBtn1');
+const backTopBtn2 = document.getElementById('backTopBtn2');
 window.onscroll = function () {
     scrollFunction();
 };
@@ -83,9 +83,11 @@ function scrollFunction() {
         document.body.scrollTop > 300 ||
         document.documentElement.scrollTop > 300
     ) {
-        backTopBtn.style.display = 'block';
+        backTopBtn1.style.display = 'block';
+        backTopBtn2.style.display = 'none';
     } else {
-        backTopBtn.style.display = 'none';
+        backTopBtn1.style.display = 'none';
+        backTopBtn2.style.display = 'block';
     }
 }
 /*button back to top end*/
