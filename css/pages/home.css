@@ -928,6 +928,22 @@ color: var(--white);
 /*student rewiews end*/
 
 /*enter email form start*/
+.email-container {
+    padding: 80px 15px 80px 15px;
+    background-color: var(--teal);
+    border-radius: 40px;
+}
+.email-container .email-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (min-width: 991px) {
+    .email-container {
+    padding: 140px 15px 140px 15px;
+    }
+}
+
 /*enter email form end*/
 
 /*course instructors start*/
