@@ -957,7 +957,7 @@ color: var(--white);
     gap: 25px;
 }
 
-.fa:hover {
+.social .fa:hover {
     background: var(--button-color);
     color: #ebebeb;
 }
