@@ -962,7 +962,7 @@ color: var(--white);
     color: #ebebeb;
 }
 
-.fa {
+.social .fa {
     height: 40px;
     width: 40px;
     color: black;
