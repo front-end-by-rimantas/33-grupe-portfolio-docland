@@ -284,7 +284,12 @@ div {
         top:-20px;
      }
  }
-
+ @media (max-width: 463px ) {
+    .btn-underline  {
+        padding-left: 0;
+        padding-right: 4em;
+    }
+ }
 /*hero end*/
 
 /*collected data start*/
@@ -537,6 +542,10 @@ div {
     cursor: pointer;
     color: var(--teal);
 }
+.btn-download-lower {
+    display: flex;
+   justify-content: center;
+}
 @media (min-width: 767px) {
     .btn-download-top {
         visibility: visible;
@@ -578,6 +587,88 @@ div {
 /*course syllabus end*/
 
 /*course benefit start*/
+.bene-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray-dark);
+    margin-bottom: 60px;
+}
+.bene-top h1 {
+    font-size: 36px;
+}
+.bene-top .bene-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    visibility: hidden;  
+}
+.bene-top .bene-buttons .bene-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: var(--teal);
+    background-color: var(--success-color);
+    border-radius: 5px;
+    font-size: 30px;
+    transition: 0.4s;
+}
+.bene-top .bene-buttons .bene-button:hover {
+    background-color: var(--teal);
+    color: var(--white);
+    transition: 0.4s;
+}
+.bene-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-bottom: 20px; 
+}
+.bene-labels .bene-label {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items:center;
+    justify-content:flex-start;
+    border-radius: 15px;
+}
+.bene-labels .bene-label .left {
+    display: grid;
+    justify-items: center;
+    justify-self: center;
+    border-radius: 10px;
+    width: 80px;
+    height: max-content;  
+}
+.bene-labels .bene-label .left img {
+   width: 40px;
+   height: 40px;
+   align-items: center;
+   justify-content: center;
+}
+.bene-labels .bene-label .right {
+    padding: 20px;
+    font-size: 16px;
+    background-color:var(--white);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.bene-labels .bene-label .right a {
+    font-size: 24px;
+    color:var(--gray-dark);
+    text-decoration: none;
+}
+.bene-labels .bene-label .right p {
+    font-size: 16px;
+    line-height: 1.8em;
+    font-weight: 300;
+}
+@media (min-width: 991px) {
+    .bene-top .bene-buttons {
+        visibility: visible;
+    }
+}
 /*course benefit end*/
 
 /*pricing start*/
