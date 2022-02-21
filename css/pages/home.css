@@ -924,7 +924,56 @@ color: var(--white);
         visibility: visible;
     }
 }
+.ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+    gap: 20px;
+}
+.ratings .ratings-aver {
+    text-align: center;
+  
+}
+.ratings-aver h2 {
+    font-size: 60px;
+    color: var(--yellow);
+    
+}
+.ratings-aver span {
+    font-size: 20px;
+    color: var(--gray);
+}
+.ratings .ratings-stud {
+    text-align: center;
 
+}
+.ratings-stud h2 {
+    font-size: 60px;
+    color: var(--teal);
+}
+.ratings-stud span {
+    font-size: 20px;
+    color: var(--gray);
+}
+.ratings-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 575px) {
+    .ratings {
+        flex-direction: row;
+        gap: 0;
+    }
+    .ratings .ratings-aver {
+        padding-right: 7%;
+    }
+    .ratings .ratings-stud {
+        padding-left: 7%;
+    }
+}
 /*student rewiews end*/
 
 /*enter email form start*/
