@@ -422,6 +422,16 @@ div {
 /*timer end*/
 
 /*what you'll learn start*/
+.section-title .black {
+    font-size: 40px;
+}
+
+.what-img {
+    width: 80%;
+    gap: 30px;
+    margin-top: 50px;
+    height: 470px;
+}
 /*what you'll learn end*/
 
 /*course syllabus start*/ 
