@@ -286,7 +286,12 @@ div {
         top:-20px;
      }
  }
-
+ @media (max-width: 463px ) {
+    .btn-underline  {
+        padding-left: 0;
+        padding-right: 4em;
+    }
+ }
 /*hero end*/
 
 /*collected data start*/
@@ -419,6 +424,16 @@ div {
 /*timer end*/
 
 /*what you'll learn start*/
+.section-title .black {
+    font-size: 40px;
+}
+
+.what-img {
+    width: 80%;
+    gap: 30px;
+    margin-top: 50px;
+    height: 470px;
+}
 /*what you'll learn end*/
 
 /*course syllabus start*/ 
@@ -447,6 +462,7 @@ div {
     padding: 30px 0 20px;
     border-radius: 20px;
     margin-bottom: 50px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 }
 .course .course-short {
     padding: 20px 20px 10px 20px; 
@@ -539,6 +555,10 @@ div {
     cursor: pointer;
     color: var(--teal);
 }
+.btn-download-lower {
+    display: flex;
+   justify-content: center;
+}
 @media (min-width: 767px) {
     .btn-download-top {
         visibility: visible;
@@ -580,6 +600,88 @@ div {
 /*course syllabus end*/
 
 /*course benefit start*/
+.bene-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray-dark);
+    margin-bottom: 60px;
+}
+.bene-top h1 {
+    font-size: 36px;
+}
+.bene-top .bene-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    visibility: hidden;  
+}
+.bene-top .bene-buttons .bene-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: var(--teal);
+    background-color: var(--success-color);
+    border-radius: 5px;
+    font-size: 30px;
+    transition: 0.4s;
+}
+.bene-top .bene-buttons .bene-button:hover {
+    background-color: var(--teal);
+    color: var(--white);
+    transition: 0.4s;
+}
+.bene-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-bottom: 20px; 
+}
+.bene-labels .bene-label {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items:center;
+    justify-content:flex-start;
+    border-radius: 15px;
+}
+.bene-labels .bene-label .left {
+    display: grid;
+    justify-items: center;
+    justify-self: center;
+    border-radius: 10px;
+    width: 80px;
+    height: max-content;  
+}
+.bene-labels .bene-label .left img {
+   width: 40px;
+   height: 40px;
+   align-items: center;
+   justify-content: center;
+}
+.bene-labels .bene-label .right {
+    padding: 20px;
+    font-size: 16px;
+    background-color:var(--white);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.bene-labels .bene-label .right a {
+    font-size: 24px;
+    color:var(--gray-dark);
+    text-decoration: none;
+}
+.bene-labels .bene-label .right p {
+    font-size: 16px;
+    line-height: 1.8em;
+    font-weight: 300;
+}
+@media (min-width: 991px) {
+    .bene-top .bene-buttons {
+        visibility: visible;
+    }
+}
 /*course benefit end*/
 
 /*pricing start*/
@@ -749,9 +851,203 @@ color: var(--white);
 /*pricing end*/
 
 /*student rewiews start*/
+.rev-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray-dark);
+    margin-bottom: 60px;
+}
+.rev-top h1 {
+    font-size: 36px;
+}
+.rev-top .rev-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    visibility: hidden;  
+}
+.rev-top .rev-buttons .rev-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: var(--teal);
+    background-color: var(--success-color);
+    border-radius: 5px;
+    font-size: 30px;
+    transition: 0.4s;
+}
+.rev-top .rev-buttons .rev-button:hover {
+    background-color: var(--teal);
+    color: var(--white);
+    transition: 0.4s;
+}
+.rev-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.rev-labels .rev-label {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 30px 20px 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.rev-labels .rev-label .student {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+     "a b"
+     "a c";
+     margin-bottom: 10px;
+}
+.rev-labels .rev-label .student img {
+   grid-area: a; 
+   width: 80px;
+   height: 80px;
+   align-items: center;
+   justify-content: center;
+}
+.rev-labels .rev-label .student span {
+    grid-area: b;
+    color: var(--yellow);
+    margin-top: 1em;
+}
+.rev-labels .rev-label .student h3 {
+    grid-area: c;
+    color:var(--purple);
+    font-size: 18px;
+    font-weight: 600;
+}
+.rev-labels .rev-label p {
+    font-size: 20px;
+    line-height: 1.8em;
+    color: var(--gray);
+    font-weight: 300;
+}
+@media (min-width: 991px) {
+    .rev-top .rev-buttons {
+        visibility: visible;
+    }
+}
+.ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+    gap: 20px;
+}
+.ratings .ratings-aver {
+    text-align: center;
+  
+}
+.ratings-aver h2 {
+    font-size: 60px;
+    color: var(--yellow);
+    
+}
+.ratings-aver span {
+    font-size: 20px;
+    color: var(--gray);
+}
+.ratings .ratings-stud {
+    text-align: center;
+
+}
+.ratings-stud h2 {
+    font-size: 60px;
+    color: var(--teal);
+}
+.ratings-stud span {
+    font-size: 20px;
+    color: var(--gray);
+}
+.ratings-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 575px) {
+    .ratings {
+        flex-direction: row;
+        gap: 0;
+    }
+    .ratings .ratings-aver {
+        padding-right: 7%;
+    }
+    .ratings .ratings-stud {
+        padding-left: 7%;
+    }
+}
 /*student rewiews end*/
 
 /*enter email form start*/
+.email-container {
+    padding: 80px 20px 80px 20px;
+    background-color: var(--teal);
+    border-radius: 40px;
+    color: var(--white);
+}
+.email-container h1 {
+    font-size: 40px;
+    line-height: 1.2em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 15px; 
+}
+.email-container .email-form {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                        "a b"
+                        "c c";
+    justify-self: center;
+    text-align: center;
+}
+.email-container .email-form input {
+   width: 100%;
+   font-size: 20px;
+   line-height: 2em;
+   color: var(--white);
+   background-color: transparent;
+   border-color: transparent;
+}
+.email-container .email-form input::placeholder {
+    color: var(--white);
+}
+.email-container .email-form label {
+    color: var(--white);
+}
+.email-container .email-form a {
+    display: grid;
+    font-size: 20px;
+    align-self: center;
+    text-decoration: none;
+    color: var(--white);
+}
+.email-form .hr {
+    grid-area: c;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+}
+.email-form .hr:active {
+    background-color: var(--yellow);
+}
+@media (min-width: 991px) {
+    .email-container {
+    padding: 140px 20px 140px 20px;
+    }
+}
+
 /*enter email form end*/
 
 /*course instructors start*/
@@ -763,5 +1059,143 @@ color: var(--white);
 /*footer end*/
 
 /*button back to top start*/
+.back-top1 {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    z-index: 99;
+    display: none;
+    height: 35px;
+    width: 35px;       
+}
+.back-top1 a:hover {
+    background-color:  var(--yellow);
+    opacity: 0.6;
+    transition: all 0.4s;
+}
+.back-top1 a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    bottom:0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background-color:  var(--yellow);
+    border: none;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    animation-name: raindrop;
+    animation-direction: normal;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    overflow: visible;
+}
+.back-top2 {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    z-index: 99;
+    display: none;  
+    height: 35px;
+    width: 35px;
+}
+.back-top2 a {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    padding: 0;
+    bottom:0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background-color:  var(--yellow);
+    border: none;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    animation-name: raindrop;
+    animation-direction: reverse;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;   
+    overflow: hidden;
+}
+@keyframes raindrop {
+    0% {
+        bottom: 500px;
+        opacity: 0.1;
+        height: 10%;
+        width: 10%;
+    }
+    10% {
+        bottom: 450px;
+        opacity: 0.15;
+        height: 15%;
+        width: 15%;
+    }
+    20% {
+        bottom: 400px;
+        opacity: 0.2;
+        height: 20%;
+        width: 20%;
+    }
+    30% {
+        bottom: 350px;
+        opacity: 0.3;
+        height: 30%;
+        width: 30%;
+    }
+    40% {
+        bottom: 300px;
+        opacity: 0.4;
+        height: 40%;
+        width: 40%;
+    }
+    50% {
+        bottom: 250px;
+        opacity: 0.5;
+        height: 50%;
+        width: 50%;
+    }
+    60% {
+        bottom: 200px;
+        opacity: 0.6;
+        height: 60%;
+        width: 60%;
+    }
+    70% {
+        bottom: 150px;
+        opacity: 0.7;
+        height: 70%;
+        width: 70%;
+    }
+    80% {
+        bottom: 100px;
+        opacity: 0.8;
+        height: 80%;
+        width: 80%;
+    }
+    90% {
+        bottom: 50px;
+        opacity: 0.9;
+        height: 90%;
+        width: 90%;
+    }
+    100% {
+        bottom: 0px;
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+    }
+}  
+html {
+    scroll-behavior: smooth;
+}
 /*button back to top end*/
 
