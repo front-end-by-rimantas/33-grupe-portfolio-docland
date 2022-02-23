@@ -7,6 +7,8 @@
 
 /* components */
 @import '../components/button.css';
+@import '../components/footer.css';
+@import '../components/instructors.css';
 
 /*fonts*/
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&amp;display=swap');
@@ -372,7 +374,7 @@ div {
     margin-bottom: 30px;
     margin-top: -10px;
     background-color: var(--success-color);
-    color: var(--green);
+    color: var(--button-color);
     font-size: 18px;
     font-weight: bold;
     border-radius: 25px;
@@ -691,7 +693,7 @@ font-weight: 700;
 width: 370;
 line-height: 1.2em;
 font: bold;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: 'hind', sans-serif;
 }
 
 .description{
@@ -844,8 +846,8 @@ color: var(--white);
     content: "\2713";
     color: var(--white);
     margin-right:10px; 
-    
 }
+
 /*pricing end*/
 
 /*student rewiews start*/
@@ -1049,179 +1051,11 @@ color: var(--white);
 /*enter email form end*/
 
 /*course instructors start*/
+        /* @import '../components/instructors.css'; */
 /*course instructors end*/
 
 /*footer start*/
-
-.footer .row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    box-sizing: content-box;
-    list-style-type: none;
-}
-
-.footlogo {
-    filter: grayscale(100%) invert(100%) contrast(300%);
-    margin-bottom: 40px;
-}
-
-.social {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-inline: 30px;
-    gap: 25px;
-}
-
-.social .fa:hover {
-    background: var(--button-color);
-    color: #ebebeb;
-}
-
-.social .fa {
-    height: 40px;
-    width: 40px;
-    color: black;
-    background: #ebebeb;
-    border-radius: 50%;
-    padding-left: 14px;
-    padding-top: 12px;
-    transition: all 0.3s;
-    cursor: pointer;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    shape-rendering: auto;
-}
-  
-.fo-2, .fo-3 {
-    margin-bottom: 30px;
-    list-style-type: none;
-}
-
-.footitle {
-    margin-bottom: 24px;
-}
-
-.footlink {
-    text-transform: capitalize;
-    text-decoration: none;
-    font-family: ubuntu, sans-serif;
-    color: #5C6B56;
-    line-height: 2.5em;
-    font-weight: 300;
-    cursor: pointer;
-    transition: all 0.7s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-
-.footlink:hover {
-    padding-left: 10px;
-    font-size: 16px;
-    color: var(--button-color);
-}
-
-.footcol {
-    max-width: 350px;
-    margin-bottom: 50px;
-    margin-left: 30px;
-}
-
-.footertext {
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-    line-height: 2;
-}
-
-.fotext {
-    font-weight: 300;
-    margin-bottom: 30px;
-}
-
-.footform {
-    height: 60px;
-    max-width: 350px;
-    position: relative;
-    text-transform: capitalize;
-    margin: 0;
-}
-  
-.footform > .buton {
-    position: absolute;
-    box-sizing: border-box;
-    top: 0;
-    right: 0;
-    height: 100%;
-    padding: 15px 30px;
-    line-height: 1;
-    font-weight: 600;
-    font-size: 18px;
-    font-family: hind, sans-serif;
-    background-color: #fbc006;
-    color: #fff;
-    border: transparent;
-    border-radius: 50px;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.input {
-    position: relative;
-    font-size: 18px;
-    float: left;
-    max-width: 350px;
-    background-color: var(--button-color);
-    color: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    padding: 0 20px;
-}
-
-@media  (max-width: 370px) {
-    .footform > .buton {
-        padding: 15px 20px;
-        font-size: 16px;
-    }    
-    .footform {
-        height: 50px;
-    }
-    .input {
-        font-size: 16px;
-    }
-}
-
-@media  (max-width: 300px) {
-    .footform > .buton {
-        padding: 10px 10px;
-        font-size: 14px;
-    }    
-    .footform {
-        height: 40px;
-    }
-    .input {
-        font-size: 14px;
-    }
-}
-
-.input::placeholder {
-    color: #fff;
-}
-  
-.footform > .buton:hover {
-    color: black;
-}
-
-:focus-visible {
-    outline-width: 0px;
-}
-
+        /* @import '../components/footer.css'; */
 /*footer end*/
 
 /*button back to top start*/
@@ -1364,3 +1198,4 @@ html {
     scroll-behavior: smooth;
 }
 /*button back to top end*/
+
