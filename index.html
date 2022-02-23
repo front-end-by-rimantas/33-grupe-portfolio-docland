@@ -656,8 +656,9 @@
                         <label for="email"></label>
                         <input autocomplete="off" id="email" type="text" placeholder="Enter your email" required autocorrect="off">
                     </form>
-                    <a href="#"><span class="fa fa-long-arrow-right"></span></a>
+                    <button type="submit" id="testEmail" onclick="checkEmail(document.getElementById('email').value)"><span class="fa fa-long-arrow-right"></span></button>
                 </div>
+                <div class="output" id="output"></div>
             </div>
         </div>
 

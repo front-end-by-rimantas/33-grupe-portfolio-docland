@@ -1058,7 +1058,9 @@ color: var(--white);
 .email-container .email-form label {
     color: var(--white);
 }
-.email-container .email-form a {
+.email-container .email-form button {
+    border: none;
+    background: transparent;
     display: grid;
     font-size: 20px;
     align-self: center;
@@ -1066,7 +1068,7 @@ color: var(--white);
     text-decoration: none;
     color: var(--white);
 }
-.email-container .email-form a:hover {
+.email-container .email-form button:hover {
     color: var(--yellow);
 }
 
@@ -1077,6 +1079,18 @@ color: var(--white);
     .email-container .email-form {
         width: 80%;
     }
+}
+.email-container .output {
+    visibility: hidden;
+    width: 200px;
+    height: 3em;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.2em;
+    border: 1px solid var(--dark-color);
+    border-radius: 5px;
+    background-color:var(--white);
+    color:var(--gray);
 }
 
 /*enter email form end*/
