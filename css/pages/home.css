@@ -762,8 +762,6 @@ color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 .instructores {
@@ -772,8 +770,6 @@ color: var(--white);
     margin-bottom: 30px;
     border-radius: 15px;
     background-color: var(--white);
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
 
@@ -786,6 +782,13 @@ color: var(--white);
     font-weight: 300;
     color: var(--paragraph-color);
 }
+
+.instructores ul {
+   padding: 20px;
+}
+
+
+
 
 .instructores h3 {
     font-size: 24px;
@@ -866,7 +869,7 @@ color: var(--white);
 
 .social {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
@@ -890,6 +893,7 @@ color: var(--white);
     transition-timing-function: ease;
     transition-delay: 0s;
     shape-rendering: auto;
+
 }
   
 .fo-2, .fo-3 {
