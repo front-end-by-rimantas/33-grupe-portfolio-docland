@@ -753,16 +753,67 @@ color: var(--white);
 /*enter email form end*/
 
 /*course instructors start*/
+
+
+
+
+
+.inst-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.instructores {
+    display: block;  
+    padding: 30px 0px 30px 0px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+
 .instructores li {
-list-style-type: none;
+    list-style-type: none;
+    font-size: 16px;
+    /* padding: 0px 0px 0px 35px; */
+    padding: 0px 0px 5px;
+    line-height: 29px;
+    font-weight: 300;
+    color: var(--paragraph-color);
+}
+
+.instructores h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    /* padding: 30px 0px 5px; */
+}
+
+.instructores h4 {
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--paragraph-color);
+    font-weight: 400;
+    margin: 0px 0px 15px;
+}
+
+.instructores p {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0px 15px;
+    line-height: 32px;
+    font-weight: 300;
+    padding-top: 30px;
 }
 
 .institle {
-/*     display: inline-block;
-    position: center; */
     text-align: center;
     font-size: 40px;
-   
 }
 
 @media  (max-width: 350px) {
@@ -795,6 +846,7 @@ list-style-type: none;
 }
 
 
+
 /*course instructors end*/
 
 /*footer start*/
@@ -817,7 +869,6 @@ list-style-type: none;
     justify-content: start;
     align-items: center;
     flex-wrap: wrap;
-    padding-inline: 30px;
     gap: 25px;
 }
 
