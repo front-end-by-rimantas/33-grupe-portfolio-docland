@@ -990,10 +990,14 @@ color: var(--white);
 
 /*enter email form start*/
 .email-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     padding: 80px 20px 80px 20px;
     background-color: var(--teal);
     border-radius: 40px;
     color: var(--white);
+    
 }
 .email-container h1 {
     font-size: 40px;
@@ -1003,49 +1007,92 @@ color: var(--white);
     margin-bottom: 15px; 
 }
 .email-container .email-form {
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 40px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-                        "a b"
-                        "c c";
-    justify-self: center;
+    grid-template-areas: "a b";
     text-align: center;
+    position: relative;
 }
+
 .email-container .email-form input {
    width: 100%;
-   font-size: 20px;
-   line-height: 2em;
+   font-size: 18px;
+   line-height: 3em;
    color: var(--white);
    background-color: transparent;
    border-color: transparent;
 }
+.email-container .email-form::before {
+     content: '';
+     width: 100%;
+     height: 2px;
+     background-color:var(--white);
+     position: absolute;
+     bottom: 0;
+}
+.email-container .email-form::after {
+    display: none;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color:var(--yellow);
+    position: absolute;
+    bottom: 0; 
+}
+.email-container .email-form:focus-within::after {
+    display: block;
+    animation-name: linerColor;
+    animation-duration: 1s;
+}
+@keyframes linerColor {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
 .email-container .email-form input::placeholder {
     color: var(--white);
+    transition: 0.6s;
 }
 .email-container .email-form label {
     color: var(--white);
 }
-.email-container .email-form a {
+.email-container .email-form button {
+    border: none;
+    background: transparent;
     display: grid;
     font-size: 20px;
     align-self: center;
+    justify-content: end;
     text-decoration: none;
     color: var(--white);
 }
-.email-form .hr {
-    grid-area: c;
-    width: 100%;
-    height: 2px;
-    background-color: var(--white);
+.email-container .email-form button:hover {
+    color: var(--yellow);
 }
-.email-form .hr:active {
-    background-color: var(--yellow);
-}
+
 @media (min-width: 991px) {
     .email-container {
-    padding: 140px 20px 140px 20px;
+    padding: 140px 100px 140px 100px;
     }
+    .email-container .email-form {
+        width: 80%;
+    }
+}
+.email-container .output {
+    visibility: hidden;
+    width: 200px;
+    height: 3em;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.2em;
+    border: 1px solid var(--dark-color);
+    border-radius: 5px;
+    background-color:var(--white);
+    color:var(--gray);
 }
 
 /*enter email form end*/
