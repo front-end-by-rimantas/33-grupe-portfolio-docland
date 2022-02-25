@@ -425,17 +425,17 @@ div {
 /*timer end*/
 
 /*what you'll learn start*/
-.section-title .black {
+
+.black {
     font-size: 40px;
 }
 
-.what-img {
-    width: 80%;
-    gap: 30px;
-    margin-top: 50px;
-    height: 470px;
+.learn-img {
+   padding: 15px 0px;
 }
+
 /*what you'll learn end*/
+
 
 /*course syllabus start*/ 
 .course-top-name {
