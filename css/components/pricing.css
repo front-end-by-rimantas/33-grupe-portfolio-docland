@@ -1,0 +1,156 @@
+.price {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-family: var(--paragraph-font);
+}
+
+.year, .month {
+    font-family: var(--paragraph-font);
+    text-align: left;
+    padding: 0px 40px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+
+.month {
+    background-color: var(--white);
+}
+
+.year {
+    background-color:var(--teal);
+    color: var(--white);
+}
+
+.list-m, .list-y {
+    display: block;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 1.78em;
+    margin-top: 10px;
+    list-style-type:none;
+    padding: 0px 10px 0px;
+}
+
+.dolary, .dolar {
+    display: inline;
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: 500;
+    padding-right: 15px;
+}
+
+.dolar {
+    color: var(--teal);
+}
+
+.text-m, .text-y {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.78;
+    position: relative;
+    max-width: 260px;
+}
+
+.text-m {
+    color: #707070;
+}
+.main-title-y, .main-title-m {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.main-title-m {
+    color: #707070;
+}
+
+.btnm, .btny {
+    margin-top: 10px;
+    background-color: var(--yellow); 
+    border: none;
+    color: var(--white);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    margin-bottom: 40px;
+}
+
+.btnm {
+    background-color: var(--yellow); 
+    color: var(--white);
+}
+
+.btny {
+    background-color: var(--white); 
+    color: var(--teal);
+}
+
+.btnm:hover{
+    background-color: var(--teal);
+}
+.btny:hover {
+    background-color: var(--yellow);
+}
+
+.spantitlem, .spantitle {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.spantitle {
+    margin-left: -55px;
+}
+
+.year .span {
+    display: inline-block;
+    font-size: 24px;
+    margin-top: 5px;
+    color: var(--success-color);
+    text-decoration: line-through;
+    font-weight: 800;
+}
+
+.tick {
+    content: "\2713";
+    color: var(--teal);
+    margin-right: 10px; 
+}
+.ticky {
+    content: "\2713";
+    color: var(--white);
+    margin-right: 10px; 
+}
+
+@media (min-width: 991px) {
+    .pricing {
+        padding: 30px 10px;
+    }
+}
+
+@media (min-width: 767px) {
+    .pricing {
+        padding: 10px 10px;
+    }
+}
+
+@media (min-width: 575px) {
+    .pricing {
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 364px) {
+    .dolar, .dolary {
+        line-height: 70px;
+    }
+    .spantitlem {
+        margin-top: 5px;
+    }
+}
