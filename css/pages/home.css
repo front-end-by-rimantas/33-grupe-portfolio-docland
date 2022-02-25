@@ -426,12 +426,50 @@ div {
     font-size: 40px;
 }
 
-.what-img {
-    width: 80%;
+.what-imgall {
+    
     gap: 30px;
     margin-top: 50px;
     height: 470px;
 }
+
+@media  (max-width: 1199px) {
+    .what-imgall {
+
+        gap: 20px;
+    }
+    .what-img {
+        width: 100%;
+        height: auto;
+        
+    }
+
+}
+
+@media  (max-width: 769px) {
+    .what-imgall {
+        
+        gap: 10px;
+    }
+    .what-img {
+        width: 100%;
+        height: auto;
+        
+    }
+}
+
+@media  (max-width: 299px) {
+    .what-imgall {
+        
+        gap: 20px;
+    }
+    .what-img {
+        width: 100%;
+        height: auto;
+        
+    }
+}
+
 /*what you'll learn end*/
 
 /*course syllabus start*/ 
