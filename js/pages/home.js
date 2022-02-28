@@ -84,13 +84,20 @@ function checkEmail(emailString) {
 
     if (Result) {
         document.getElementById('output').innerHTML = 'Thanks!';
-        document.getElementById('output').style.visibility = 'visible';
+        document.getElementById('output').style.opacity = 1;
     } else {
         document.getElementById('output').innerHTML =
             'Your email address is invalid';
-        document.getElementById('output').style.visibility = 'visible';
+        document.getElementById('output').style.opacity = 1;
     }
 }
+document.getElementById('output').onclick = function () {
+    closeOutput();
+};
+function closeOutput() {
+    document.getElementById('output').style.opacity = 0;
+}
+
 /*enter email form end*/
 
 /*course instructors start*/

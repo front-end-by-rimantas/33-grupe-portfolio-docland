@@ -8,8 +8,8 @@
 /* components */
 @import '../components/button.css';
 @import '../components/footer.css';
-@import '../components/header.css';
 @import '../components/instructors.css';
+@import '../components/pricing.css';
 
 /*fonts*/
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&amp;display=swap');
@@ -324,17 +324,17 @@ div {
 /*timer end*/
 
 /*what you'll learn start*/
-.section-title .black {
+
+.black {
     font-size: 40px;
 }
 
-.what-img {
-    width: 80%;
-    gap: 30px;
-    margin-top: 50px;
-    height: 470px;
+.learn-img {
+   padding: 15px 0px;
 }
+
 /*what you'll learn end*/
+
 
 /*course syllabus start*/ 
 .course-top-name {
@@ -585,169 +585,7 @@ div {
 /*course benefit end*/
 
 /*pricing start*/
-.price{
-display: flex;
-justify-content: center;
-font-size: 36px;
-font-weight: 700;
-width: 370;
-line-height: 1.2em;
-font: bold;
-font-family: 'hind', sans-serif;
-}
-
-.description{
-    width: 780px;
-    margin: 0 auto;
-}
-
-.month{
-display: flex;
-justify-content: center;
-border: inherit;
-border-radius: 25px;
-height: 500px;
-width: 350px;
-float: left;
-background-color:var(--white);
-margin: 15px;
-}
-
-.year{
-display: flex;
-justify-content: center;
-border: inherit;
-border-radius: 25px;
-height: 500px;
-width: 350px;
-float: left;
-background-color:var(--teal);
-margin: 15px;
-color: var(--white);
-}
-
-.list-m, .list-y{
-    list-style-position:inside;
-    font-size: 20px;
-    line-height: 1.78;
-    margin-top: 10px;
-    list-style-type:none;
-    
-    
-}
-
-.dolar{
-    color: var(--teal);
-    font-size: 55px;
-    font-weight: 700;
-}
-
-.dolary{
-    
-    margin-top: 10px;
-    font-size: 55px;
-    font-weight: 700;
-}
-
-.text-m{
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 1.78;
-    color: #707070;
-    position: relative;
-    max-width: 260px;
-}
-
-.text-y{
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 1.78;
-    position:relative;
-    max-width: 260px;
-}
-
-.main-title-m{
-    margin-top: 40px;
-    color: #707070;
-    font-size: 20px;
-}
-
-.main-title-y{
-    margin-top: 40px;
-    font-size: 20px;
-    
-}
-
-.btnm{
-    margin-top: 10px;
-    background-color: var(--yellow); 
-    border: none;
-    color: var(--white);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin-top: 15px;
-    border-radius: 12px;
-    transition-duration: 0.4s;
-}
-
-.btnm:hover{
-    background-color: var(--teal);
-}
-
-.btny{
-    margin-top: 10px;
-    background-color: var(--white); 
-    border: none;
-    color: var(--teal);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin-top: 15px;
-    border-radius: 12px;
-    transition-duration: 0.4s;
-}
-
-.btny:hover{
-    background-color: var(--yellow);
-}
-.spantitle{
-    margin-left: 10px;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 35px;
-}
-
-.spantitlem{
-    margin-left: 10px;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 35px;
-}
-.span{
-    margin-left: 10px;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 12px;
-    color:#17a2b8;
-    text-decoration: line-through;
-    
-}
-.tick{
-    content: "\2713";
-    color: var(--teal);
-    margin-right:10px; 
-}
-.ticky{
-    content: "\2713";
-    color: var(--white);
-    margin-right:10px; 
-}
-
+    /* @import '../components/pricing.css'; */
 /*pricing end*/
 
 /*student rewiews start*/
@@ -893,7 +731,7 @@ color: var(--white);
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 20px 80px 20px;
+    padding: 80px 20px 30px 20px;
     background-color: var(--teal);
     border-radius: 40px;
     color: var(--white);
@@ -976,14 +814,15 @@ color: var(--white);
 
 @media (min-width: 991px) {
     .email-container {
-    padding: 140px 100px 140px 100px;
+    padding: 140px 100px 90px 100px;
     }
     .email-container .email-form {
         width: 80%;
     }
 }
 .email-container .output {
-    visibility: hidden;
+    opacity: 0;
+    position: relative;
     width: 200px;
     height: 3em;
     margin-top: 10px;
@@ -993,6 +832,14 @@ color: var(--white);
     border-radius: 5px;
     background-color:var(--white);
     color:var(--gray);
+    padding-right: 10px;   
+}
+.email-container .output::after {
+    content: 'x';
+    position: absolute;
+    top: 0;
+    right: 0.5em;
+    color:var(--yellow);
 }
 
 /*enter email form end*/
