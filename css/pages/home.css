@@ -732,7 +732,7 @@ div {
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 20px 30px 20px;
+    padding: 80px 20px 80px 20px;
     background-color: var(--teal);
     border-radius: 40px;
     color: var(--white);
@@ -748,6 +748,7 @@ div {
 .email-container .email-form {
     width: 90%;
     display: grid;
+    justify-content: space-between;
     grid-template-columns: 1fr 40px;
     grid-template-areas: "a b";
     text-align: center;
@@ -755,6 +756,7 @@ div {
 }
 
 .email-container .email-form input {
+    grid-area: a;
    width: 100%;
    font-size: 18px;
    line-height: 3em;
@@ -800,6 +802,7 @@ div {
     color: var(--white);
 }
 .email-container .email-form button {
+    grid-area: b;
     border: none;
     background: transparent;
     display: grid;
@@ -808,6 +811,7 @@ div {
     justify-content: end;
     text-decoration: none;
     color: var(--white);
+    cursor: pointer;
 }
 .email-container .email-form button:hover {
     color: var(--yellow);
@@ -815,32 +819,15 @@ div {
 
 @media (min-width: 991px) {
     .email-container {
-    padding: 140px 100px 90px 100px;
+    padding: 140px 100px 140px 100px;
     }
     .email-container .email-form {
         width: 80%;
     }
 }
-.email-container .output {
-    opacity: 0;
-    position: relative;
-    width: 200px;
-    height: 3em;
-    margin-top: 10px;
-    font-size: 14px;
-    line-height: 1.2em;
-    border: 1px solid var(--dark-color);
-    border-radius: 5px;
-    background-color:var(--white);
-    color:var(--gray);
-    padding-right: 10px;   
-}
-.email-container .output::after {
-    content: 'x';
-    position: absolute;
-    top: 0;
-    right: 0.5em;
-    color:var(--yellow);
+
+*:focus {
+    outline: none;
 }
 
 /*enter email form end*/

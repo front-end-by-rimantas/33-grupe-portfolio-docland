@@ -63,41 +63,6 @@ courses.forEach((course) => course.addEventListener('click', toggleAccordion));
 /*student rewiews end*/
 
 /*enter email form start*/
-
-function ValidateEmailAddress(emailString) {
-    let atSymbol = emailString.indexOf('@');
-    if (atSymbol < 1) {
-        return false;
-    }
-    let dot = emailString.indexOf('.');
-    if (dot <= atSymbol + 2) {
-        return false;
-    }
-    if (dot === emailString.length - 1) {
-        return false;
-    }
-    return true;
-}
-
-function checkEmail(emailString) {
-    const Result = ValidateEmailAddress(emailString);
-
-    if (Result) {
-        document.getElementById('output').innerHTML = 'Thanks!';
-        document.getElementById('output').style.opacity = 1;
-    } else {
-        document.getElementById('output').innerHTML =
-            'Your email address is invalid';
-        document.getElementById('output').style.opacity = 1;
-    }
-}
-document.getElementById('output').onclick = function () {
-    closeOutput();
-};
-function closeOutput() {
-    document.getElementById('output').style.opacity = 0;
-}
-
 /*enter email form end*/
 
 /*course instructors start*/
