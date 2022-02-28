@@ -428,7 +428,15 @@ div {
 }
 
 .learn-img {
-   padding: 15px 0px;
+   height: 250px;
+   width: 100%;
+   
+}
+
+.what-img {
+    position: absolute;
+    height: auto;
+    width: 250px;
 }
 
 .what-text {
