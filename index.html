@@ -656,14 +656,11 @@
         <div class="row">
             <div class="col-12 email-container">
                 <h1>Become A Good Designer From Beginner To Expert Grab This Course Now.</h1>
-                <div class="email-form">
-                    <form>
-                        <label for="email"></label>
-                        <input autocomplete="off" id="email" type="text" placeholder="Enter your email" required autocorrect="off">
-                    </form>
-                    <button type="submit" id="testEmail" onclick="checkEmail(document.getElementById('email').value)"><span class="fa fa-long-arrow-right"></span></button>
-                </div>
-                <div class="output" id="output" onclick="closeOutput();return false"></div>
+                <form class="email-form">
+                    <label for="email"></label>
+                    <input  id="email" type="email" placeholder="Enter your email" required autocomplete="off" autocorrect="off">
+                    <button type="submit"><span class="fa fa-long-arrow-right"></span></button>
+                </form>
             </div>
         </div>
 
