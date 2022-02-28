@@ -10,6 +10,7 @@
 @import '../components/footer.css';
 @import '../components/header.css';
 @import '../components/instructors.css';
+@import '../components/pricing.css';
 
 /*fonts*/
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&amp;display=swap');
