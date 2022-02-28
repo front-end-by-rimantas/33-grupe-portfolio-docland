@@ -431,6 +431,15 @@ div {
    padding: 15px 0px;
 }
 
+.what-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    background-color: yellow;
+    transform: translate(-50%, -50%);
+  }
+
 /*what you'll learn end*/
 
 
