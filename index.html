@@ -180,19 +180,15 @@
     <!-- timer end -->
 
     <!-- what you'll learn start -->
-    <section class="container">
-        <div class="row col-12">
-            <div class="col-md-11">
-                <div class="section-title">
-                    <h1 class="black">What You'll Learn From This Course</h1>
-                </div>
-            </div>
-            <div class="what-img visible-flex col-3">
-                <img src="./img/what-youll-learn/wireframe.png" alt="Wireframe">
-                <img src="./img/what-youll-learn/prototype.png" alt="Prototype">
-                <img src="./img/what-youll-learn/sketch1.png" alt="Sketch1">
-                <img src="./img/what-youll-learn/sketch2.png" alt="Sketch2">
-            </div>
+    <section class="container ">
+        <div class="row">
+            <h1 class="col-12 col-md-12 col-lg-10 black">What You'll Learn From This Course</h1>
+        </div>
+        <div class="row what-img">
+            <img class="learn-img col-12 col-md-6 col-lg-3" src="./img/what-youll-learn/wireframe.png" alt="Wireframe">
+            <img class="learn-img col-12 col-md-6 col-lg-3" src="./img/what-youll-learn/prototype.png" alt="Prototype">
+            <img class="learn-img col-12 col-md-6 col-lg-3" src="./img/what-youll-learn/sketch1.png" alt="Sketch1">
+            <img class="learn-img col-12 col-md-6 col-lg-3" src="./img/what-youll-learn/sketch2.png" alt="Sketch2">
         </div>
     </section>
     <!-- what you'll learn end -->
@@ -543,43 +539,43 @@
 
     <!-- pricing start -->
     <section class="container pricing">
-      <div class="row">
-        <div class="col-12 ">
-          <div class="price">Pricing</div>
+        <div class="row">
+            <div class="col-4 ml-4">
+                <h2 class="price">Pricing</h2>
+            </div>
         </div>
-      </div>
-    </div>
-<div class="description">
-  <div class="month">
-  <div class="col-12 col-md-6">
-    <p class="main-title-m"><span class="dolar">$175</span><span class="spantitlem">Monthly</span></p>
-    <p class="text-m">Life can be unpredictable. Get maximum flexibility to learn at your own pace.</p>
-    <ul class="list-m">
-      <li><span class="tick">&#10004;</span>Monthly Subscription</li>
-      <li><span class="tick">&#10004;</span>Access only 1 item</li>
-      <li><span class="tick">&#10004;</span>Join with community</li>
-      <li><span class="tick">&#10004;</span>One to one mentorship</li>
-    </ul>
-  <a class="btnm" href="#">Enroll Now</a></div>
-</div>
-  <div class="year">
-<div class="col-12 col-md-6">
-    <p class="main-title-y"><span class="dolary">$870</span><span class="span">$999</span><span class="spantitle">Yearly</span></p>
-    <p class="text-y">Paid yearly and get 15% discount. Get maximum flexibility to learn at your pace.</p>
-    <ul class="list-y">
-      <li><span class="ticky">&#10004;</span>Monthly Subscription</li>
-      <li><span class="ticky">&#10004;</span>Access only 1 item</li>
-      <li><span class="ticky">&#10004;</span>Join with community</li>
-      <li><span class="ticky">&#10004;</span>One to one mentorship</li>
-    </ul>
-    <a class="btny" href="#">Enroll Now</a>
-   </div>
-  </div>
-  </div>
-</div>
-  </section>   
-        
+ 
+        <div class="row">
+            <div class="month col-12 col-md-6 col-xl-4 ml-xl-2">
+                <p class="main-title-m"><span class="dolar">$175</span><span class="spantitlem">Monthly</span></p>
+                <p class="text-m">Life can be unpredictable. Get maximum flexibility to learn at your own pace.</p>
+                <ul class="list-m">
+                    <li><span class="tick">&#10004;</span>Monthly Subscription</li>
+                    <li><span class="tick">&#10004;</span>Access only 1 item</li>
+                    <li><span class="tick">&#10004;</span>Join with community</li>
+                    <li><span class="tick">&#10004;</span>One to one mentorship</li>
+                </ul>
+                <div>
+                    <a class="btnm" href="#">Enroll Now</a>
+                </div>
+            </div>
 
+            <div class="year col-12 col-md-6 col-xl-4 mr-xr-2">
+                <p class="main-title-y"><span class="dolary">$870</span><span class="span">$999</span><span class="spantitle">Yearly</span></p>   
+                <p class="text-y">Paid yearly and get 15% discount. Get maximum flexibility to learn at your pace.</p>
+                <ul class="list-y">
+                    <li><span class="ticky">&#10004;</span>Monthly Subscription</li>
+                    <li><span class="ticky">&#10004;</span>Access only 1 item</li>
+                    <li><span class="ticky">&#10004;</span>Join with community</li>
+                    <li><span class="ticky">&#10004;</span>One to one mentorship</li>
+                </ul>
+                <div>
+                    <a class="btny" href="#">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </section>   
+        
     <!-- pricing end -->
 
     <!-- student rewiews start -->
@@ -662,7 +658,7 @@
                     </form>
                     <button type="submit" id="testEmail" onclick="checkEmail(document.getElementById('email').value)"><span class="fa fa-long-arrow-right"></span></button>
                 </div>
-                <div class="output" id="output"></div>
+                <div class="output" id="output" onclick="closeOutput();return false"></div>
             </div>
         </div>
 
