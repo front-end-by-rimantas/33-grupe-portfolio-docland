@@ -21,7 +21,7 @@
  .dropdown {
     position:relative;
     display: inline-block;
-    padding-inline-end: 40px;
+    padding-inline-end: 30px;
     padding-top: 30px;
 }
   .dropdown-content {
@@ -92,7 +92,7 @@
       display: inline-block;
       margin-top: 30px;
       margin-right: 200px;
-      margin-left: 110px;
+      margin-left: 160px;
 }
   .dropdown-content > .BtnC{
       color: var(--teal);
