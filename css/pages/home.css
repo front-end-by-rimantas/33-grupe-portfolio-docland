@@ -441,11 +441,13 @@ div {
 
 .what-text {
     position: relative;
-    top: 50%;
+    top: 122%;
     left: 50%;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
     color: #fff;
-    background-color: yellow;
+    background-color: transparent;
     transform: translate(-50%, -50%);
   }
 
