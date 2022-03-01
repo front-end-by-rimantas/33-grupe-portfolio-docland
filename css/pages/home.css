@@ -7,6 +7,10 @@
 
 /* components */
 @import '../components/button.css';
+@import '../components/footer.css';
+@import '../components/header.css';
+@import '../components/instructors.css';
+@import '../components/pricing.css';
 
 /*fonts*/
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&amp;display=swap');
@@ -35,108 +39,7 @@ div {
 }
 
 /*header start*/
-
-
-.dropbtn {
-    background-color:inherit;
-    color: #343a40;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    font-family: ubuntu, sans-serif;
-    transition-duration: 0.1s;
-}
-.dropbtn:hover{
-    color: var(--teal);
-}
-.dropbtnH{
-      color: var(--teal);
-      background-color:inherit;
-      font-size: 20px;
-      border: none;
-      cursor: pointer;
-      font-family: ubuntu, sans-serif;
-}
- .dropdown {
-    position:relative;
-    display: inline-block;
-    padding-inline-end: 40px;
-    padding-top: 30px;
-}
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--white);
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    font-size: 20px;
-}
-.dropdown-content a {
-    color:var(--gray-dark);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition-duration: 0.1s;
-}
-.dropdown-content a:hover{
-    color: var(--teal);
-}
-.dropdown-content a:hover {background-color:var(--white)}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdown:hover .dropbtn {
-    background-color: inherit;
-}
-.login{
-      font-size: 20px;
-      color:var(--yellow);
-      display: inline-block;
-      padding-top: 30px;
-      padding-right: 25px;
-      font-family: ubuntu, sans-serif;
-        
-}
- .Pricing{
-      font-size: 20px;
-      margin-top: 30px;
-      display: inline-block;
-      padding-right: 30px;
-      font-family: ubuntu, sans-serif;
-      color:var(--gray-dark);
-      text-decoration: none;
-      transition-duration: 0.1s;
-}
-  .Pricing:hover{
-      color:var(--teal)
-}
-  .Joinnow{
-      background-color: var(--teal); 
-      border: none;
-      color: var(--white);
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 20px;
-      margin-top: 15px;
-      border-radius: 12px;
-      transition-duration: 0.4s;
-}
-  .Joinnow:hover{
-      background-color: var(--yellow);
-}
-    .Logo{
-      display: inline-block;
-      margin-top: 30px;
-      margin-right: 200px;
-      margin-left: 110px;
-}
-  .dropdown-content > .BtnC{
-      color: var(--teal);
-        
-    }
+    /* @import '../components/header.css';  */
 /*header end*/
 
 /*hero start*/
@@ -372,7 +275,7 @@ div {
     margin-bottom: 30px;
     margin-top: -10px;
     background-color: var(--success-color);
-    color: var(--green);
+    color: var(--button-color);
     font-size: 18px;
     font-weight: bold;
     border-radius: 25px;
@@ -703,169 +606,7 @@ div {
 /*course benefit end*/
 
 /*pricing start*/
-.price{
-display: flex;
-justify-content: center;
-font-size: 36px;
-font-weight: 700;
-width: 370;
-line-height: 1.2em;
-font: bold;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.description{
-    width: 780px;
-    margin: 0 auto;
-}
-
-.month{
-display: flex;
-justify-content: center;
-border: inherit;
-border-radius: 25px;
-height: 500px;
-width: 350px;
-float: left;
-background-color:var(--white);
-margin: 15px;
-}
-
-.year{
-display: flex;
-justify-content: center;
-border: inherit;
-border-radius: 25px;
-height: 500px;
-width: 350px;
-float: left;
-background-color:var(--teal);
-margin: 15px;
-color: var(--white);
-}
-
-.list-m, .list-y{
-    list-style-position:inside;
-    font-size: 20px;
-    line-height: 1.78;
-    margin-top: 10px;
-    list-style-type:none;
-    
-    
-}
-
-.dolar{
-    color: var(--teal);
-    font-size: 55px;
-    font-weight: 700;
-}
-
-.dolary{
-    
-    margin-top: 10px;
-    font-size: 55px;
-    font-weight: 700;
-}
-
-.text-m{
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 1.78;
-    color: #707070;
-    position: relative;
-    max-width: 260px;
-}
-
-.text-y{
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 1.78;
-    position:relative;
-    max-width: 260px;
-}
-
-.main-title-m{
-    margin-top: 40px;
-    color: #707070;
-    font-size: 20px;
-}
-
-.main-title-y{
-    margin-top: 40px;
-    font-size: 20px;
-    
-}
-
-.btnm{
-    margin-top: 10px;
-    background-color: var(--yellow); 
-    border: none;
-    color: var(--white);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin-top: 15px;
-    border-radius: 12px;
-    transition-duration: 0.4s;
-}
-
-.btnm:hover{
-    background-color: var(--teal);
-}
-
-.btny{
-    margin-top: 10px;
-    background-color: var(--white); 
-    border: none;
-    color: var(--teal);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin-top: 15px;
-    border-radius: 12px;
-    transition-duration: 0.4s;
-}
-
-.btny:hover{
-    background-color: var(--yellow);
-}
-.spantitle{
-    margin-left: 10px;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 35px;
-}
-
-.spantitlem{
-    margin-left: 10px;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 35px;
-}
-.span{
-    margin-left: 10px;
-    font-size: 20px;
-    position: absolute;
-    margin-top: 12px;
-    color:#17a2b8;
-    text-decoration: line-through;
-    
-}
-.tick{
-    content: "\2713";
-    color: var(--teal);
-    margin-right:10px; 
-}
-.ticky{
-    content: "\2713";
-    color: var(--white);
-    margin-right:10px; 
-    
-}
+    /* @import '../components/pricing.css'; */
 /*pricing end*/
 
 /*student rewiews start*/
@@ -954,187 +695,309 @@ color: var(--white);
         visibility: visible;
     }
 }
+.ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+    gap: 20px;
+}
+.ratings .ratings-aver {
+    text-align: center;
+  
+}
+.ratings-aver h2 {
+    font-size: 60px;
+    color: var(--yellow);
+    
+}
+.ratings-aver span {
+    font-size: 20px;
+    color: var(--gray);
+}
+.ratings .ratings-stud {
+    text-align: center;
 
+}
+.ratings-stud h2 {
+    font-size: 60px;
+    color: var(--teal);
+}
+.ratings-stud span {
+    font-size: 20px;
+    color: var(--gray);
+}
+.ratings-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 575px) {
+    .ratings {
+        flex-direction: row;
+        gap: 0;
+    }
+    .ratings .ratings-aver {
+        padding-right: 7%;
+    }
+    .ratings .ratings-stud {
+        padding-left: 7%;
+    }
+}
 /*student rewiews end*/
 
 /*enter email form start*/
+.email-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px 80px 20px;
+    background-color: var(--teal);
+    border-radius: 40px;
+    color: var(--white);
+    
+}
+.email-container h1 {
+    font-size: 40px;
+    line-height: 1.2em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 15px; 
+}
+.email-container .email-form {
+    width: 90%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 40px;
+    grid-template-areas: "a b";
+    text-align: center;
+    position: relative;
+}
+
+.email-container .email-form input {
+    grid-area: a;
+   width: 100%;
+   font-size: 18px;
+   line-height: 3em;
+   color: var(--white);
+   background-color: transparent;
+   border-color: transparent;
+}
+.email-container .email-form::before {
+     content: '';
+     width: 100%;
+     height: 2px;
+     background-color:var(--white);
+     position: absolute;
+     bottom: 0;
+}
+.email-container .email-form::after {
+    display: none;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color:var(--yellow);
+    position: absolute;
+    bottom: 0; 
+}
+.email-container .email-form:focus-within::after {
+    display: block;
+    animation-name: linerColor;
+    animation-duration: 1s;
+}
+@keyframes linerColor {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.email-container .email-form input::placeholder {
+    color: var(--white);
+    transition: 0.6s;
+}
+.email-container .email-form label {
+    color: var(--white);
+}
+.email-container .email-form button {
+    grid-area: b;
+    border: none;
+    background: transparent;
+    display: grid;
+    font-size: 20px;
+    align-self: center;
+    justify-content: end;
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+}
+.email-container .email-form button:hover {
+    color: var(--yellow);
+}
+
+@media (min-width: 991px) {
+    .email-container {
+    padding: 140px 100px 140px 100px;
+    }
+    .email-container .email-form {
+        width: 80%;
+    }
+}
+
+*:focus {
+    outline: none;
+}
+
 /*enter email form end*/
 
 /*course instructors start*/
+        /* @import '../components/instructors.css'; */
 /*course instructors end*/
 
 /*footer start*/
-
-.footer .row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    box-sizing: content-box;
-    list-style-type: none;
-}
-
-.footlogo {
-    filter: grayscale(100%) invert(100%) contrast(300%);
-    margin-bottom: 40px;
-}
-
-.social {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-inline: 30px;
-    gap: 25px;
-}
-
-.social .fa:hover {
-    background: var(--button-color);
-    color: #ebebeb;
-}
-
-.social .fa {
-    height: 40px;
-    width: 40px;
-    color: black;
-    background: #ebebeb;
-    border-radius: 50%;
-    padding-left: 14px;
-    padding-top: 12px;
-    transition: all 0.3s;
-    cursor: pointer;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    shape-rendering: auto;
-}
-  
-.fo-2, .fo-3 {
-    margin-bottom: 30px;
-    list-style-type: none;
-}
-
-.footitle {
-    margin-bottom: 24px;
-}
-
-.footlink {
-    text-transform: capitalize;
-    text-decoration: none;
-    font-family: ubuntu, sans-serif;
-    color: #5C6B56;
-    line-height: 2.5em;
-    font-weight: 300;
-    cursor: pointer;
-    transition: all 0.7s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-
-.footlink:hover {
-    padding-left: 10px;
-    font-size: 16px;
-    color: var(--button-color);
-}
-
-.footcol {
-    max-width: 350px;
-    margin-bottom: 50px;
-    margin-left: 30px;
-}
-
-.footertext {
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-    line-height: 2;
-}
-
-.fotext {
-    font-weight: 300;
-    margin-bottom: 30px;
-}
-
-.footform {
-    height: 60px;
-    max-width: 350px;
-    position: relative;
-    text-transform: capitalize;
-    margin: 0;
-}
-  
-.footform > .buton {
-    position: absolute;
-    box-sizing: border-box;
-    top: 0;
-    right: 0;
-    height: 100%;
-    padding: 15px 30px;
-    line-height: 1;
-    font-weight: 600;
-    font-size: 18px;
-    font-family: hind, sans-serif;
-    background-color: #fbc006;
-    color: #fff;
-    border: transparent;
-    border-radius: 50px;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.input {
-    position: relative;
-    font-size: 18px;
-    float: left;
-    max-width: 350px;
-    background-color: var(--button-color);
-    color: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    padding: 0 20px;
-}
-
-@media  (max-width: 370px) {
-    .footform > .buton {
-        padding: 15px 20px;
-        font-size: 16px;
-    }    
-    .footform {
-        height: 50px;
-    }
-    .input {
-        font-size: 16px;
-    }
-}
-
-@media  (max-width: 300px) {
-    .footform > .buton {
-        padding: 10px 10px;
-        font-size: 14px;
-    }    
-    .footform {
-        height: 40px;
-    }
-    .input {
-        font-size: 14px;
-    }
-}
-
-.input::placeholder {
-    color: #fff;
-}
-  
-.footform > .buton:hover {
-    color: black;
-}
-
-:focus-visible {
-    outline-width: 0px;
-}
-
+        /* @import '../components/footer.css'; */
 /*footer end*/
 
 /*button back to top start*/
+.back-top1 {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    z-index: 99;
+    display: none;
+    height: 35px;
+    width: 35px;       
+}
+.back-top1 a:hover {
+    background-color:  var(--yellow);
+    opacity: 0.6;
+    transition: all 0.4s;
+}
+.back-top1 a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    bottom:0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background-color:  var(--yellow);
+    border: none;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    animation-name: raindrop;
+    animation-direction: normal;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    overflow: visible;
+}
+.back-top2 {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    z-index: 99;
+    display: none;  
+    height: 35px;
+    width: 35px;
+}
+.back-top2 a {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    padding: 0;
+    bottom:0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background-color:  var(--yellow);
+    border: none;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    animation-name: raindrop;
+    animation-direction: reverse;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;   
+    overflow: hidden;
+}
+@keyframes raindrop {
+    0% {
+        bottom: 500px;
+        opacity: 0.1;
+        height: 10%;
+        width: 10%;
+    }
+    10% {
+        bottom: 450px;
+        opacity: 0.15;
+        height: 15%;
+        width: 15%;
+    }
+    20% {
+        bottom: 400px;
+        opacity: 0.2;
+        height: 20%;
+        width: 20%;
+    }
+    30% {
+        bottom: 350px;
+        opacity: 0.3;
+        height: 30%;
+        width: 30%;
+    }
+    40% {
+        bottom: 300px;
+        opacity: 0.4;
+        height: 40%;
+        width: 40%;
+    }
+    50% {
+        bottom: 250px;
+        opacity: 0.5;
+        height: 50%;
+        width: 50%;
+    }
+    60% {
+        bottom: 200px;
+        opacity: 0.6;
+        height: 60%;
+        width: 60%;
+    }
+    70% {
+        bottom: 150px;
+        opacity: 0.7;
+        height: 70%;
+        width: 70%;
+    }
+    80% {
+        bottom: 100px;
+        opacity: 0.8;
+        height: 80%;
+        width: 80%;
+    }
+    90% {
+        bottom: 50px;
+        opacity: 0.9;
+        height: 90%;
+        width: 90%;
+    }
+    100% {
+        bottom: 0px;
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+    }
+}  
+html {
+    scroll-behavior: smooth;
+}
 /*button back to top end*/
+
