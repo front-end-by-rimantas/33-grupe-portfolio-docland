@@ -19,9 +19,9 @@
 
 <body class="body-bg">
     
-    <!-- header start -->
+       <!-- header start -->
     
-    <header class="top-container">
+       <header class="top-container">
 
         <img class="Logo"src="./img/crs-logo.png" alt="Logo">
         <div class="dropdown">
@@ -659,11 +659,13 @@
                 <div class="email-form">
                     <form>
                         <label for="email"></label>
-                        <input autocomplete="off" id="email" type="text" placeholder="Enter your email" required autocorrect="off">
+                        <input class="input" id="email" type="email" placeholder="Enter your email" required autocomplete="off" autocorrect="off">
                     </form>
                     <button type="submit" id="testEmail" onclick="checkEmail(document.getElementById('email').value)"><span class="fa fa-long-arrow-right"></span></button>
                 </div>
                 <div class="output" id="output" onclick="closeOutput();return false"></div>
+                <div class="output" id="output"></div>
+
             </div>
         </div>
 
@@ -752,13 +754,14 @@
                 <p class="footertext">Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est.</p>
                 <form class="footer-form">
                     <div class="row footform">
-                        <input class="input" autocomplete="off" id="email" type="text" placeholder="Enter your email" required autocorrect="off">
+                        <input class="input" id="email" type="email" placeholder="Enter your email" required autocomplete="off" autocorrect="off">
                         <button type="submit" class="buton">Subscribe</button>
                     </div>
                 </form>
             </div>
         </div>
-    </div>         
+    </div>
+             
     <!-- footer end -->
 
     <!-- button back to top start -->
