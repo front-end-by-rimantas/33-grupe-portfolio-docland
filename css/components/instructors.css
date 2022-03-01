@@ -1,0 +1,131 @@
+.inst-pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.instructors img {
+    height: 190px;
+    margin: 35px 0px 35px;
+}
+
+.instructores {
+    padding: 30px 0px 30px 0px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: var(--white);
+  }
+
+.instructores li {
+    list-style-type: none;
+    font-size: 16px;
+    padding: 0px 0px 0px 5px;
+    line-height: 29px;
+    font-weight: 300;
+    color: var(--paragraph-color);
+    text-align: left;
+}
+
+.instructores ul {
+   padding: 10px;
+   text-align: left;
+}
+
+.instructores h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.instructores h4 {
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--paragraph-color);
+    font-weight: 400;
+    margin: 0px 0px 15px;
+}
+
+.instructores p {
+    text-align: center;
+    font-size: 20px;
+    margin: 0px 10px;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+.institle {
+    text-align: center;
+    font-size: 36px;
+}
+
+@media  (max-width: 991px) {
+    .instructors img {
+        height: 200px;
+        margin: 0px 0px 20px;
+    }
+}
+
+@media  (max-width: 575px) {
+    .instructores p{
+         font-size: 16px;
+    }
+    .instructors img {
+        height: 160px;
+        margin: 25px 0px 25px;
+    }
+    .instructors {
+        padding: 20px 10px;       
+    }
+}
+
+@media  (max-width: 460px) {
+    .inst-pic {
+        flex-direction: column;
+    }
+    .instructors img {
+        height: 60%;
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px 20px;
+    }
+    .instructores li, h3, h4 {
+        padding: 0;
+    }   
+    .instructores h3 {
+        font-size: 20px;
+    }
+    .instructores h4 {
+        font-size: 16px;
+    }
+}
+
+@media  (max-width: 350px) {
+    .institle {
+        padding: 0;
+        margin: 0;
+        font-size: 32px;
+    }
+    .instructores p{
+        font-size: 14px;
+    }
+}
+
+@media  (max-width: 280px) {
+    .institle {
+         font-size: 28px;
+    }
+}
+
+.inicon1::after {
+    content: url(../../img/course-instructor/a1.png); 
+}
+
+.inicon2::after {
+    content: url(../../img/course-instructor/a2.png); 
+}
+
+.inicon3::after {
+    content: url(../../img/course-instructor/a3.png); 
+}
